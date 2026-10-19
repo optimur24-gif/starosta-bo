@@ -1,0 +1,363 @@
+{
+  "source": "BodyParts3D 4.0, The Database Center for Life Science",
+  "officialDataset": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+  "officialLicense": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "publication": "https://doi.org/10.1093/nar/gkn613",
+  "distributionRepository": "https://github.com/choxos/OMFAtlas",
+  "distributionCommit": "c835665a9ade09ee0b993cee6eee1b25b7f7311b",
+  "transformations": "Subset of 22 skull bones and 28 contextual teeth; source high-resolution packed geometry copied without changing coordinates or triangles; offsets repacked. Display colours and separation are runtime effects.",
+  "binarySha256": "51aaa0574608fc45691461c8b363c5e4b72340ccefd3c19ca346584752c78a60",
+  "sourceFiles": [
+    {
+      "id": "FJ3199",
+      "path": "public/models/high-resolution/FJ3199.bin",
+      "gitBlob": "586f1c7539498333835f8d4cf6bd0c672d5a57d9",
+      "sha256": "eae9c64c31941d20516d4934ba4cd7da4142118c984b576ef7275968cc7bf36d",
+      "bytes": 492024
+    },
+    {
+      "id": "FJ3200",
+      "path": "public/models/high-resolution/FJ3200.bin",
+      "gitBlob": "994d6d398b74612332e1d712d7548b1e5e56bf6b",
+      "sha256": "0493f90e451f318341e162fea57361dfcb5aacca0ae005a474954327156970c2",
+      "bytes": 326616
+    },
+    {
+      "id": "FJ3263",
+      "path": "public/models/high-resolution/FJ3263.bin",
+      "gitBlob": "a5f24d90e66cdb6078e4a25c9f4a49d240ebd82d",
+      "sha256": "d88639f74a0e687dfc08d09ccd6069a5f0905a0e78968696e28ff5f7d02790a8",
+      "bytes": 17532
+    },
+    {
+      "id": "FJ3265",
+      "path": "public/models/high-resolution/FJ3265.bin",
+      "gitBlob": "97b625fe85c67184c6682c82e7a6690e52554b8b",
+      "sha256": "bb63983021e28cd8f6867dc4d7782c38fb190cfd7417b91ae33a989f6fdcae75",
+      "bytes": 14268
+    },
+    {
+      "id": "FJ3269",
+      "path": "public/models/high-resolution/FJ3269.bin",
+      "gitBlob": "0f28cdd0b6ea9e2349b853618de74aae89ce9f92",
+      "sha256": "31d00b532affae665bfe25295b1e7184cb75a7c15292035bb65839263ec066b8",
+      "bytes": 126764
+    },
+    {
+      "id": "FJ3272",
+      "path": "public/models/high-resolution/FJ3272.bin",
+      "gitBlob": "00b25af03610dad3e12789fb9bfef7f119210e8e",
+      "sha256": "c055665eb14174704377725a5f44a6332b2e6ece764e29ba3fe47db3bc7a5da6",
+      "bytes": 9992
+    },
+    {
+      "id": "FJ3273",
+      "path": "public/models/high-resolution/FJ3273.bin",
+      "gitBlob": "48e347e262b9bf7e1cae9c6c837058e24b34403c",
+      "sha256": "825b64c22334294c9af8280f7e59edabdbff861cc0ff1df31d9c2e29c1be0faa",
+      "bytes": 44208
+    },
+    {
+      "id": "FJ3274",
+      "path": "public/models/high-resolution/FJ3274.bin",
+      "gitBlob": "327792da390aaa5a5b904cda3efddf4bb679d71e",
+      "sha256": "1b6833f9bf0b8c85f8c02afc98c545294c56290757c7828730720668486016eb",
+      "bytes": 309128
+    },
+    {
+      "id": "FJ3281",
+      "path": "public/models/high-resolution/FJ3281.bin",
+      "gitBlob": "54754b857bf6c4df66850b238ddf7b6c7daa5849",
+      "sha256": "fa15cbc9efb3228980db5e0ceb4ed1bb50e20ed0bcd7dbfa0b9a072c17e99a90",
+      "bytes": 113468
+    },
+    {
+      "id": "FJ3287",
+      "path": "public/models/high-resolution/FJ3287.bin",
+      "gitBlob": "fdb1fd36e406198c26e3d4c414a4f2d02cde70e9",
+      "sha256": "b54681c396353cd78aca619fd8cd0c65d2d8dc4a84bd9c5e7e27de684f8ea8f6",
+      "bytes": 33932
+    },
+    {
+      "id": "FJ3289",
+      "path": "public/models/high-resolution/FJ3289.bin",
+      "gitBlob": "ac770ecc6ed34ef87d8b4e22cf003b6f6248f8cd",
+      "sha256": "b505cd388bcc63b08f3969e8ff76b6cb1b13bdc5d5170fc599b2be2a2a5cdf96",
+      "bytes": 118124
+    },
+    {
+      "id": "FJ3309",
+      "path": "public/models/high-resolution/FJ3309.bin",
+      "gitBlob": "02988203fcab307d972257c9a76056337da2927f",
+      "sha256": "711778395fa8fc1ed6b479a7b49cbdfd807e4aebefbbb0ac2b0ddd4d781ca8fd",
+      "bytes": 275312
+    },
+    {
+      "id": "FJ3369",
+      "path": "public/models/high-resolution/FJ3369.bin",
+      "gitBlob": "04dc407fc2264b54d73b0649c4a83f37f5cbee86",
+      "sha256": "a2a3f63c544021835aa212dd39fafcb4cb37117c57e9d8725c1d17ec9c3421a1",
+      "bytes": 18864
+    },
+    {
+      "id": "FJ3371",
+      "path": "public/models/high-resolution/FJ3371.bin",
+      "gitBlob": "8b0ba32020ab2f3a098ff9b4b3c9af16ad66b9e0",
+      "sha256": "b373ceb3af21a2273f954d450d618fb030b19d344e2f1a5de85bd31608d6bf8b",
+      "bytes": 15644
+    },
+    {
+      "id": "FJ3375",
+      "path": "public/models/high-resolution/FJ3375.bin",
+      "gitBlob": "385e779e32c7ff9114a37542c9dbba7c92e27f2c",
+      "sha256": "7f308eb1383f25facb1922266464e701d3a39b683c4bcc4b95ac74c1adac4cfa",
+      "bytes": 127124
+    },
+    {
+      "id": "FJ3378",
+      "path": "public/models/high-resolution/FJ3378.bin",
+      "gitBlob": "9fff8c75308c72af69b323d14a70460b8297b28f",
+      "sha256": "a6af7be2264156faf5a325e6b5722d488eeb0efdc0ee38ca42b38150609526fa",
+      "bytes": 9764
+    },
+    {
+      "id": "FJ3379",
+      "path": "public/models/high-resolution/FJ3379.bin",
+      "gitBlob": "d06550799eca03ea1c543afad01809a93f9a38e8",
+      "sha256": "b7d511c70c8786d256a0a567998fd139b0b6747becd547663db253b6b98473c8",
+      "bytes": 41208
+    },
+    {
+      "id": "FJ3380",
+      "path": "public/models/high-resolution/FJ3380.bin",
+      "gitBlob": "ae2597c17ad293caa7892fa3cc2e5f2d09ddeea7",
+      "sha256": "8fb9007575bac01f8037d611feafcd7aa3173a952ff0399c1fa4893262a74c82",
+      "bytes": 300528
+    },
+    {
+      "id": "FJ3386",
+      "path": "public/models/high-resolution/FJ3386.bin",
+      "gitBlob": "d62ac0906e1ce3cfe28148370b91f58a9bb5c8c0",
+      "sha256": "47ed498f2ed96121ea396d4bdea9541b2effc464e4e68c30f5ff5711fec52403",
+      "bytes": 114972
+    },
+    {
+      "id": "FJ3392",
+      "path": "public/models/high-resolution/FJ3392.bin",
+      "gitBlob": "fbdc6f24223a76dff70a2d8c35b607283e9ef7d1",
+      "sha256": "af2c0d4c511b8b03f4813d0e29da564a28eb37f2e338f5d440fd62da14056aee",
+      "bytes": 35484
+    },
+    {
+      "id": "FJ3394",
+      "path": "public/models/high-resolution/FJ3394.bin",
+      "gitBlob": "bc8bb835b99567fbcad527d4ec3343e485630be8",
+      "sha256": "1f890805b12d656df21dc200daf2d8af99c046f2bb8309b1e44612ac30546296",
+      "bytes": 187076
+    },
+    {
+      "id": "FJ3395",
+      "path": "public/models/high-resolution/FJ3395.bin",
+      "gitBlob": "80ccac769780123a4c49ce3b0aa86797025c79ac",
+      "sha256": "96337a97a525114ec909cef893d8d3612ab9db28a4064ed0c02edc854fbe2f21",
+      "bytes": 152496
+    },
+    {
+      "id": "FJ1254",
+      "path": "public/models/high-resolution/FJ1254.bin",
+      "gitBlob": "cbe1adfdab0b0157ee452a0387be6d604adf2d87",
+      "sha256": "5d98f464dc70f30a019b435fbd5eaafd7266663c1a31cf53fc362dfc14357f94",
+      "bytes": 37076
+    },
+    {
+      "id": "FJ1255",
+      "path": "public/models/high-resolution/FJ1255.bin",
+      "gitBlob": "9e6cc20d6c4a8f60c14f703b7c917e999612202a",
+      "sha256": "f67a24b094030d551f3f7bd5faeb9c52760c91052e2befcea1591e5a79f3b9c1",
+      "bytes": 24768
+    },
+    {
+      "id": "FJ1256",
+      "path": "public/models/high-resolution/FJ1256.bin",
+      "gitBlob": "42d4386866f98a622583beb52197090f26826153",
+      "sha256": "95eb10b3bc8b04bf65cd25f72a9c290b2a936a01c17413c7235007ea438a7b11",
+      "bytes": 34208
+    },
+    {
+      "id": "FJ1257",
+      "path": "public/models/high-resolution/FJ1257.bin",
+      "gitBlob": "fc3311baea10df197d1c8bcc62dc4bc0a771f61c",
+      "sha256": "5226d139e8cc9644377bd7d34adf10370dfed6c2f297b3aec8ac464465f3e4bc",
+      "bytes": 23652
+    },
+    {
+      "id": "FJ1258",
+      "path": "public/models/high-resolution/FJ1258.bin",
+      "gitBlob": "73192d04fcb2d72dc61c7256ac4639b14a85d4b1",
+      "sha256": "c18b3200deb26672d7fb242ba5a971935a6cd02d4e97fa94ae19aae4837db6ff",
+      "bytes": 19316
+    },
+    {
+      "id": "FJ1259",
+      "path": "public/models/high-resolution/FJ1259.bin",
+      "gitBlob": "65a89cd4be7945ba93c1f382ae8f5a7e185d896b",
+      "sha256": "4b4e57e1ca75622cb08e8c3c3d3fa495ff6ade2d3f5817d1ecc8e2a12d9efb1f",
+      "bytes": 20216
+    },
+    {
+      "id": "FJ1260",
+      "path": "public/models/high-resolution/FJ1260.bin",
+      "gitBlob": "39c163cb3e2f97e4278fee573e0340e0bc4b6f86",
+      "sha256": "f15078ba60dd00c8d66eba1d6b2fb6e126679a9aacf964b462f34dc2b1540287",
+      "bytes": 24816
+    },
+    {
+      "id": "FJ1261",
+      "path": "public/models/high-resolution/FJ1261.bin",
+      "gitBlob": "c44ea72b3b5ff73182614e3eda0ea09db5b2fcbb",
+      "sha256": "cfe2d1c97489f0ce96ea5a6836c0eb3f96e72ffc2e81cfa7674d7f0cacd2cf52",
+      "bytes": 45384
+    },
+    {
+      "id": "FJ1262",
+      "path": "public/models/high-resolution/FJ1262.bin",
+      "gitBlob": "91df8d7036123d888ca96c4924a2a465bcfe7c42",
+      "sha256": "a594dd165b1c517462cc7f82634f2d0567e4502e4bf04dc81b0bd694d255ff01",
+      "bytes": 34044
+    },
+    {
+      "id": "FJ1263",
+      "path": "public/models/high-resolution/FJ1263.bin",
+      "gitBlob": "3484ba799d904600ba50a6112944e9bfabe0ffe2",
+      "sha256": "0e81fb0394c82db142a646f0a56b36501727c4e181b19817729a9efe6bc636d0",
+      "bytes": 39260
+    },
+    {
+      "id": "FJ1264",
+      "path": "public/models/high-resolution/FJ1264.bin",
+      "gitBlob": "70c2cf83031177f9a36f4ef62dba52c468fbaf02",
+      "sha256": "8c60913f4901ce5a3a7730d2441914d576b72f343464ba85d708db30a5afbc23",
+      "bytes": 31056
+    },
+    {
+      "id": "FJ1265",
+      "path": "public/models/high-resolution/FJ1265.bin",
+      "gitBlob": "d772bbaf2b9ce62abf2d8f770ec887a9a24cbb10",
+      "sha256": "dbaa3bf11d9ba93693e0d56e5374bcb0f99144d8c49edaba1895903a3c0feeb6",
+      "bytes": 27084
+    },
+    {
+      "id": "FJ1266",
+      "path": "public/models/high-resolution/FJ1266.bin",
+      "gitBlob": "46f52c81c547262a645d2e4e9fa036121e558445",
+      "sha256": "13fe3f8612891e4eac0b11e057a5bb9eb70281a40a1a0960d621483f5b26bcda",
+      "bytes": 28976
+    },
+    {
+      "id": "FJ1267",
+      "path": "public/models/high-resolution/FJ1267.bin",
+      "gitBlob": "c69b0258d533802597a11840ec873acc559051a4",
+      "sha256": "1366fecdf2a21a0b06d3445d9271dae9fc6b3bbade1e0c41e6f9208726789d80",
+      "bytes": 29268
+    },
+    {
+      "id": "FJ1268",
+      "path": "public/models/high-resolution/FJ1268.bin",
+      "gitBlob": "4481622312dd07ed20a9bf1c75a16165965127f7",
+      "sha256": "cd79cc73914d1a282ffd4aafb0fbd917f669c6f28c6d7c356d7ca4356e6feed8",
+      "bytes": 37148
+    },
+    {
+      "id": "FJ1269",
+      "path": "public/models/high-resolution/FJ1269.bin",
+      "gitBlob": "f51e8c3707c92c83e28803639f9fe58620306d34",
+      "sha256": "1342836fc5715e660f9464996993e4b11a58347438eadbec50f2ccf2513815ba",
+      "bytes": 24816
+    },
+    {
+      "id": "FJ1270",
+      "path": "public/models/high-resolution/FJ1270.bin",
+      "gitBlob": "f9ede7ebd4ed97d5885eb7e92eebb87367688191",
+      "sha256": "0d1b2be2fba5e36aaa41264c6eda0337beed4a9c942f8d2f83e417dd4a79b755",
+      "bytes": 34164
+    },
+    {
+      "id": "FJ1271",
+      "path": "public/models/high-resolution/FJ1271.bin",
+      "gitBlob": "93eaf18451792cc767c738b2c966efcffe811365",
+      "sha256": "a0c70f33d9312f3ba16b14beb3bef09772d238bf397312e239d5878984b2c380",
+      "bytes": 23696
+    },
+    {
+      "id": "FJ1272",
+      "path": "public/models/high-resolution/FJ1272.bin",
+      "gitBlob": "250357cff2fc9ce49bfe402de25b97d9e1b0c216",
+      "sha256": "b90f64a1cc89f21fdb1285cd041c9d2f6900e44ba7893baa6bee0fb3a4bb6203",
+      "bytes": 19376
+    },
+    {
+      "id": "FJ1273",
+      "path": "public/models/high-resolution/FJ1273.bin",
+      "gitBlob": "9597bd94c88db51d3229ba0c63956cbd3a971a7f",
+      "sha256": "e5c7ff1e2540dbacd82e8d797fe631722fbc81720ad9d5b88a2854a1a553df65",
+      "bytes": 20244
+    },
+    {
+      "id": "FJ1274",
+      "path": "public/models/high-resolution/FJ1274.bin",
+      "gitBlob": "3c129ddb1eedbbf41d011d1422ffa9b1a40f2675",
+      "sha256": "f34d611d2adb78d21a5ee8b9c4671ee2ef36e1d56c63b4dea816f0cae313790e",
+      "bytes": 24776
+    },
+    {
+      "id": "FJ1275",
+      "path": "public/models/high-resolution/FJ1275.bin",
+      "gitBlob": "a76b12e142558ea802735bcdba1344fc8147df62",
+      "sha256": "3d4bace0cb4cc6ac724d14057d255aee37d2b7c883b87557f7c12f4b75c5bc22",
+      "bytes": 39500
+    },
+    {
+      "id": "FJ1276",
+      "path": "public/models/high-resolution/FJ1276.bin",
+      "gitBlob": "3a08b5ef7ef57d4488784cd34cfc64452d0d45a3",
+      "sha256": "4680930a854418ac81359abb58189e90e94372455254e09f00de9a6e746e6501",
+      "bytes": 45656
+    },
+    {
+      "id": "FJ1277",
+      "path": "public/models/high-resolution/FJ1277.bin",
+      "gitBlob": "c6b0cf5fe2cfbe3fb37a382dd8f596febcd850f1",
+      "sha256": "4dc97aa79efa1017ba4db35a6855317467446d45e8286acab109307ab533f8e1",
+      "bytes": 34008
+    },
+    {
+      "id": "FJ1278",
+      "path": "public/models/high-resolution/FJ1278.bin",
+      "gitBlob": "a8a5e4af91f28838c7d60b2df877417d3aac9319",
+      "sha256": "eaa9849e3322a3c061cc5086261473681f430f955aff8bec5f42641ef66b96be",
+      "bytes": 31056
+    },
+    {
+      "id": "FJ1279",
+      "path": "public/models/high-resolution/FJ1279.bin",
+      "gitBlob": "c6315ab95ca5cf0f6a0e129151f3d1e1ed47b264",
+      "sha256": "36d2dd5baa71158870ae9569c786979c668df1800ab50007c1efb45d42a40550",
+      "bytes": 27104
+    },
+    {
+      "id": "FJ1280",
+      "path": "public/models/high-resolution/FJ1280.bin",
+      "gitBlob": "02ff80dd64e1f2cee4cddfed76976667cdaf881e",
+      "sha256": "45e155e1e9df668338723f37aa40a56b58f8dce3f8c8214c20170c677b3343d8",
+      "bytes": 28764
+    },
+    {
+      "id": "FJ1281",
+      "path": "public/models/high-resolution/FJ1281.bin",
+      "gitBlob": "880b5184ad6f9a9ce05222456ab07a2656a25746",
+      "sha256": "82458c8f99cc869c00c4fe9a7252650d146b28f02f214c2e0eab280701fbf3aa",
+      "bytes": 29268
+    }
+  ]
+}

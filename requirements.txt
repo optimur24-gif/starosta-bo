@@ -1,0 +1,2 @@
+# BotHost worker uses Python 3.11+ standard library only.
+# Frontend dependencies are installed separately with npm ci.

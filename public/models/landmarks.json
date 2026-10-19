@@ -1,0 +1,2459 @@
+{
+  "version": 1,
+  "source": "Z-Anatomy, Gauthier Kervyn and contributors; original BodyParts3D reference",
+  "license": "CC BY-SA 4.0",
+  "sourceRepository": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+  "sourceRevision": "767f14e0a4dfc55aa7c3455685b62339a4faec99",
+  "sourceArchive": "Z-Anatomy.zip",
+  "sourceArchiveSha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+  "sourceArchiveGitBlob": "f43cabc6f366b2a6058dd2ed4a2b3c7b9b2492cb",
+  "extraction": "Evaluated endpoint vertex 1 of native Blender .j annotation lines (including Hook modifiers), not the text endpoint. No Wikipedia definitions copied.",
+  "registration": {
+    "scale": 1.026374766763924,
+    "rotation": [
+      [
+        0.9999982176589862,
+        0.001600103225378096,
+        -0.0010021719018910233
+      ],
+      [
+        -0.0016033091384614784,
+        0.9999935742642224,
+        -0.003206373351955623
+      ],
+      [
+        0.0009970349338569598,
+        0.003207974428473423,
+        0.999994357394784
+      ]
+    ],
+    "translation": [
+      -0.003352026250828844,
+      -0.036064594017284124,
+      -0.017396494955467884
+    ],
+    "rmsVertexDistanceMm": 2.142041060628227,
+    "p95VertexDistanceMm": 4.994272802402842,
+    "description": "Global similarity registration of 22 matching source bone surfaces; source Z-up converted to Y-up first. Nearest-vertex distances include tessellation and model differences."
+  },
+  "adaptation": "Markers transferred to BodyParts3D 4.0 by global similarity registration, then nearest-vertex surface projection. Bilateral counterparts mirror the source reference before registration. This is educational registration, not an expert validation of all landmark locations.",
+  "coveredStructureCount": 92,
+  "markers": [
+    {
+      "structureId": "frontal-1",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 2428,
+      "position": [
+        -0.016776099801063538,
+        1.6795512437820435,
+        0.058226000517606735
+      ],
+      "sourceObject": "Squamous part of frontal bone.j",
+      "sourceEnglish": "Squamous part of frontal bone",
+      "sourcePoint": [
+        -0.016588522121310234,
+        -0.06841012835502625,
+        1.6711610555648804
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.10063403656199
+    },
+    {
+      "structureId": "frontal-2",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 1819,
+      "position": [
+        -0.029990600422024727,
+        1.620631217956543,
+        0.04610399901866913
+      ],
+      "sourceObject": "Orbital part of frontal bone.j",
+      "sourceEnglish": "Orbital part of frontal bone",
+      "sourcePoint": [
+        -0.026904886588454247,
+        -0.05809355154633522,
+        1.61456298828125
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.166875255634605
+    },
+    {
+      "structureId": "frontal-3",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 3450,
+      "position": [
+        -0.006432670168578625,
+        1.606241226196289,
+        0.06620199978351593
+      ],
+      "sourceObject": "Nasal part of frontal bone.j",
+      "sourceEnglish": "Nasal part of frontal bone",
+      "sourcePoint": [
+        -0.005842169746756554,
+        -0.07571756839752197,
+        1.5994088649749756
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.2047756569370538
+    },
+    {
+      "structureId": "frontal-5",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 6076,
+      "position": [
+        0.028899800032377243,
+        1.6724212169647217,
+        0.05314100161194801
+      ],
+      "sourceObject": "Internal surface of squamous part of frontal bone.j",
+      "sourceEnglish": "Internal surface of squamous part of frontal bone",
+      "sourcePoint": [
+        0.028194496408104897,
+        -0.06325235962867737,
+        1.6651077270507812
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.7077078439933401
+    },
+    {
+      "structureId": "frontal-8",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 3629,
+      "position": [
+        0.0029249999206513166,
+        1.6177312135696411,
+        0.07522600144147873
+      ],
+      "sourceObject": "Glabella.j",
+      "sourceEnglish": "Glabella",
+      "sourcePoint": [
+        5.6884230659193236e-09,
+        -0.08500930666923523,
+        1.611162543296814
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 3.743769866749356
+    },
+    {
+      "structureId": "frontal-10",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 6169,
+      "position": [
+        0.028180599212646484,
+        1.621171236038208,
+        0.0684410035610199
+      ],
+      "sourceObject": "(Supra-orbital notch).j",
+      "sourceEnglish": "(Supra-orbital notch)",
+      "sourcePoint": [
+        0.028194455429911613,
+        -0.07872668653726578,
+        1.6147385835647583
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.38431358198844323
+    },
+    {
+      "structureId": "frontal-11",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 7148,
+      "position": [
+        0.047240000218153,
+        1.6202712059020996,
+        0.059544000774621964
+      ],
+      "sourceObject": "Zygomatic process of frontal bone.j",
+      "sourceEnglish": "Zygomatic process of frontal bone",
+      "sourcePoint": [
+        0.047967664897441864,
+        -0.06798039376735687,
+        1.6135404109954834
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.2484107534325015
+    },
+    {
+      "structureId": "frontal-12",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 342,
+      "position": [
+        -0.056959401816129684,
+        1.633851170539856,
+        0.04357999935746193
+      ],
+      "sourceObject": "Temporal line.j",
+      "sourceEnglish": "Temporal line",
+      "sourcePoint": [
+        -0.05484526604413986,
+        -0.054361309856176376,
+        1.6260706186294556
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.0659241810375713
+    },
+    {
+      "structureId": "frontal-13",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 3996,
+      "position": [
+        0.00012777700612787157,
+        1.6473212242126465,
+        0.06862399727106094
+      ],
+      "sourceObject": "Frontal crest.j",
+      "sourceEnglish": "Frontal crest",
+      "sourcePoint": [
+        5.688421733651694e-09,
+        -0.07858951389789581,
+        1.6400235891342163
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9462932486581104
+    },
+    {
+      "structureId": "frontal-15",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 4430,
+      "position": [
+        -0.0008921879925765097,
+        1.6150811910629272,
+        0.061135999858379364
+      ],
+      "sourceObject": "Foramen caecum of frontal bone.j",
+      "sourceEnglish": "Foramen caecum of frontal bone",
+      "sourcePoint": [
+        5.6884230659193236e-09,
+        -0.07124205678701401,
+        1.6084787845611572
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.5139244153276638
+    },
+    {
+      "structureId": "frontal-17",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 1010,
+      "position": [
+        -0.04658469930291176,
+        1.6155612468719482,
+        0.051968999207019806
+      ],
+      "sourceObject": "Fossa for lacrimal gland.j",
+      "sourceEnglish": "Fossa for lacrimal gland",
+      "sourcePoint": [
+        -0.04496874660253525,
+        -0.06239185854792595,
+        1.6088814735412598
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.5735190058472551
+    },
+    {
+      "structureId": "frontal-18",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 2627,
+      "position": [
+        -0.014658300206065178,
+        1.6145012378692627,
+        0.06515499949455261
+      ],
+      "sourceObject": "Trochlear fovea.j",
+      "sourceEnglish": "Trochlear fovea",
+      "sourcePoint": [
+        -0.013208008371293545,
+        -0.07559535652399063,
+        1.6072100400924683
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.2827792709562913
+    },
+    {
+      "structureId": "frontal-19",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 4106,
+      "position": [
+        -0.0008996339747682214,
+        1.602601170539856,
+        0.07124800235033035
+      ],
+      "sourceObject": "Nasal spine of frontal bone.j",
+      "sourceEnglish": "Nasal spine of frontal bone",
+      "sourcePoint": [
+        5.688421289562484e-09,
+        -0.08127134293317795,
+        1.5966696739196777
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.18576038116632204
+    },
+    {
+      "structureId": "frontal-21",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 4531,
+      "position": [
+        0.003481029998511076,
+        1.623311161994934,
+        0.0667629987001419
+      ],
+      "sourceObject": "Septum of frontal sinuses.j",
+      "sourceEnglish": "Septum of frontal sinuses",
+      "sourcePoint": [
+        0.0018454118398949504,
+        -0.0810481607913971,
+        1.6166883707046509
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 4.963957236012943
+    },
+    {
+      "structureId": "frontal-22",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 1414,
+      "position": [
+        -0.046026699244976044,
+        1.687711238861084,
+        0.015615999698638916
+      ],
+      "sourceObject": "Parietal margin of frontal bone.j",
+      "sourceEnglish": "Parietal margin of frontal bone",
+      "sourcePoint": [
+        -0.04409896209836006,
+        -0.02714383788406849,
+        1.6795903444290161
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.3716677716376496
+    },
+    {
+      "structureId": "parietal-1",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 7843,
+      "position": [
+        0.0633741021156311,
+        1.6811012029647827,
+        -0.05153999850153923
+      ],
+      "sourceObject": "External surface of parietal bone.j",
+      "sourceEnglish": "External surface of parietal bone",
+      "sourcePoint": [
+        -0.0618707500398159,
+        0.04029036685824394,
+        1.673451542854309
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 1.7494058260492802
+    },
+    {
+      "structureId": "parietal-1",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 583,
+      "position": [
+        -0.0631335973739624,
+        1.6824512481689453,
+        -0.053979601711034775
+      ],
+      "sourceObject": "External surface of parietal bone.j",
+      "sourceEnglish": "External surface of parietal bone",
+      "sourcePoint": [
+        -0.0618707500398159,
+        0.04029036685824394,
+        1.673451542854309
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.3494384120445408
+    },
+    {
+      "structureId": "parietal-2",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 7608,
+      "position": [
+        0.06017040088772774,
+        1.6852011680603027,
+        -0.05221400037407875
+      ],
+      "sourceObject": "Internal surface of parietal bone.j",
+      "sourceEnglish": "Internal surface of parietal bone",
+      "sourcePoint": [
+        -0.05730053782463074,
+        0.03841865807771683,
+        1.6725820302963257
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 5.0297789046798425
+    },
+    {
+      "structureId": "parietal-2",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 1046,
+      "position": [
+        -0.05897970125079155,
+        1.6807612180709839,
+        -0.051857199519872665
+      ],
+      "sourceObject": "Internal surface of parietal bone.j",
+      "sourceEnglish": "Internal surface of parietal bone",
+      "sourcePoint": [
+        -0.05730053782463074,
+        0.03841865807771683,
+        1.6725820302963257
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.626473488589053
+    },
+    {
+      "structureId": "parietal-4",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 6747,
+      "position": [
+        0.054827600717544556,
+        1.6501611471176147,
+        -0.08242149651050568
+      ],
+      "sourceObject": "Superior temporal line.j",
+      "sourceEnglish": "Superior temporal line",
+      "sourcePoint": [
+        -0.05796581879258156,
+        0.0697028711438179,
+        1.6413360834121704
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 4.46677462508065
+    },
+    {
+      "structureId": "parietal-4",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 1158,
+      "position": [
+        -0.056108999997377396,
+        1.6506812572479248,
+        -0.0823787972331047
+      ],
+      "sourceObject": "Superior temporal line.j",
+      "sourceEnglish": "Superior temporal line",
+      "sourcePoint": [
+        -0.05796581879258156,
+        0.0697028711438179,
+        1.6413360834121704
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 4.527440731718388
+    },
+    {
+      "structureId": "parietal-5",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 7890,
+      "position": [
+        0.061889201402664185,
+        1.6382112503051758,
+        -0.07172670215368271
+      ],
+      "sourceObject": "Inferior temporal line.j",
+      "sourceEnglish": "Inferior temporal line",
+      "sourcePoint": [
+        -0.06433238089084625,
+        0.059673573821783066,
+        1.6300345659255981
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 4.000575167060829
+    },
+    {
+      "structureId": "parietal-5",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 304,
+      "position": [
+        -0.06696809828281403,
+        1.6362111568450928,
+        -0.07208040356636047
+      ],
+      "sourceObject": "Inferior temporal line.j",
+      "sourceEnglish": "Inferior temporal line",
+      "sourcePoint": [
+        -0.06433238089084625,
+        0.059673573821783066,
+        1.6300345659255981
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.6686916343009164
+    },
+    {
+      "structureId": "parietal-6",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 2219,
+      "position": [
+        0.0007566880085505545,
+        1.7113511562347412,
+        -0.04865249991416931
+      ],
+      "sourceObject": "Sagittal border of parietal bone.j",
+      "sourceEnglish": "Sagittal border of parietal bone",
+      "sourcePoint": [
+        0.0014350134879350662,
+        0.035793714225292206,
+        1.7022515535354614
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.2844855481373768
+    },
+    {
+      "structureId": "parietal-6",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 6374,
+      "position": [
+        -0.002194379922002554,
+        1.7113012075424194,
+        -0.0482528991997242
+      ],
+      "sourceObject": "Sagittal border of parietal bone.j",
+      "sourceEnglish": "Sagittal border of parietal bone",
+      "sourcePoint": [
+        0.0014350134879350662,
+        0.035793714225292206,
+        1.7022515535354614
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.36027935785253373
+    },
+    {
+      "structureId": "parietal-7",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 6091,
+      "position": [
+        0.04771839827299118,
+        1.6786911487579346,
+        0.015599999576807022
+      ],
+      "sourceObject": "Frontal border of parietal bone.j",
+      "sourceEnglish": "Frontal border of parietal bone",
+      "sourcePoint": [
+        -0.04712807387113571,
+        -0.02762577123939991,
+        1.670445442199707
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 1.0039640486519967
+    },
+    {
+      "structureId": "parietal-7",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 2280,
+      "position": [
+        -0.050171300768852234,
+        1.6780911684036255,
+        0.01624700054526329
+      ],
+      "sourceObject": "Frontal border of parietal bone.j",
+      "sourceEnglish": "Frontal border of parietal bone",
+      "sourcePoint": [
+        -0.04712807387113571,
+        -0.02762577123939991,
+        1.670445442199707
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.218147614782254
+    },
+    {
+      "structureId": "parietal-8",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 6276,
+      "position": [
+        0.04723839834332466,
+        1.6251611709594727,
+        -0.10077536851167679
+      ],
+      "sourceObject": "Occipital border of parietal bone.j",
+      "sourceEnglish": "Occipital border of parietal bone",
+      "sourcePoint": [
+        -0.04690597951412201,
+        0.08671442419290543,
+        1.6180001497268677
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.5248073383113423
+    },
+    {
+      "structureId": "parietal-8",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 2474,
+      "position": [
+        -0.04863709956407547,
+        1.6249412298202515,
+        -0.100685715675354
+      ],
+      "sourceObject": "Occipital border of parietal bone.j",
+      "sourceEnglish": "Occipital border of parietal bone",
+      "sourcePoint": [
+        -0.04690597951412201,
+        0.08671442419290543,
+        1.6180001497268677
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4469951652548808
+    },
+    {
+      "structureId": "parietal-9",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 8050,
+      "position": [
+        0.06807100027799606,
+        1.6178412437438965,
+        -0.023383500054478645
+      ],
+      "sourceObject": "Squamosal border of parietal bone.j",
+      "sourceEnglish": "Squamosal border of parietal bone",
+      "sourcePoint": [
+        -0.0669114738702774,
+        0.010630661621689796,
+        1.6115128993988037
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.45997373901713784
+    },
+    {
+      "structureId": "parietal-9",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 381,
+      "position": [
+        -0.06906940042972565,
+        1.618131160736084,
+        -0.022732600569725037
+      ],
+      "sourceObject": "Squamosal border of parietal bone.j",
+      "sourceEnglish": "Squamosal border of parietal bone",
+      "sourcePoint": [
+        -0.0669114738702774,
+        0.010630661621689796,
+        1.6115128993988037
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4544718960484938
+    },
+    {
+      "structureId": "parietal-10",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 3264,
+      "position": [
+        0.0013906699605286121,
+        1.7079112529754639,
+        0.009770000353455544
+      ],
+      "sourceObject": "Frontal angle of parietal bone.j",
+      "sourceEnglish": "Frontal angle of parietal bone",
+      "sourcePoint": [
+        -0.0015739426016807556,
+        -0.021178822964429855,
+        1.6993489265441895
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.41035642562146984
+    },
+    {
+      "structureId": "parietal-10",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 5940,
+      "position": [
+        -0.0025498599279671907,
+        1.707971215248108,
+        0.009676000103354454
+      ],
+      "sourceObject": "Frontal angle of parietal bone.j",
+      "sourceEnglish": "Frontal angle of parietal bone",
+      "sourcePoint": [
+        -0.0015739426016807556,
+        -0.021178822964429855,
+        1.6993489265441895
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4396555489726685
+    },
+    {
+      "structureId": "parietal-12",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 3223,
+      "position": [
+        0.0011682199547067285,
+        1.6664812564849854,
+        -0.10819224268198013
+      ],
+      "sourceObject": "Occipital angle of parietal bone.j",
+      "sourceEnglish": "Occipital angle of parietal bone",
+      "sourcePoint": [
+        -0.0011440962553024292,
+        0.09411928057670593,
+        1.6579772233963013
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.8311866419113729
+    },
+    {
+      "structureId": "parietal-12",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 5847,
+      "position": [
+        -0.002207770012319088,
+        1.666121244430542,
+        -0.10836496949195862
+      ],
+      "sourceObject": "Occipital angle of parietal bone.j",
+      "sourceEnglish": "Occipital angle of parietal bone",
+      "sourcePoint": [
+        -0.0011440962553024292,
+        0.09411928057670593,
+        1.6579772233963013
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.5602132130206582
+    },
+    {
+      "structureId": "parietal-13",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 7874,
+      "position": [
+        0.061416201293468475,
+        1.5960712432861328,
+        -0.06484349817037582
+      ],
+      "sourceObject": "Mastoid angle of parietal bone.j",
+      "sourceEnglish": "Mastoid angle of parietal bone",
+      "sourcePoint": [
+        -0.06009625270962715,
+        0.05189642682671547,
+        1.5900574922561646
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.6753543858602932
+    },
+    {
+      "structureId": "parietal-13",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 1085,
+      "position": [
+        -0.062185000628232956,
+        1.5962412357330322,
+        -0.06583549827337265
+      ],
+      "sourceObject": "Mastoid angle of parietal bone.j",
+      "sourceEnglish": "Mastoid angle of parietal bone",
+      "sourcePoint": [
+        -0.06009625270962715,
+        0.05189642682671547,
+        1.5900574922561646
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.3968003019159433
+    },
+    {
+      "structureId": "parietal-14",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 3915,
+      "position": [
+        0.007457459811121225,
+        1.6867811679840088,
+        -0.08481089770793915
+      ],
+      "sourceObject": "Parietal foramen.j",
+      "sourceEnglish": "Parietal foramen",
+      "sourcePoint": [
+        -0.007514838129281998,
+        0.07467851787805557,
+        1.6820460557937622
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 5.291288250775999
+    },
+    {
+      "structureId": "parietal-14",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 4529,
+      "position": [
+        -0.008083559572696686,
+        1.690581202507019,
+        -0.08842989802360535
+      ],
+      "sourceObject": "Parietal foramen.j",
+      "sourceEnglish": "Parietal foramen",
+      "sourcePoint": [
+        -0.007514838129281998,
+        0.07467851787805557,
+        1.6820460557937622
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.16541240179684424
+    },
+    {
+      "structureId": "temporal-1",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 2331,
+      "position": [
+        0.06783150136470795,
+        1.6073112487792969,
+        -0.018782099708914757
+      ],
+      "sourceObject": "Squamous part of temporal bone.j",
+      "sourceEnglish": "Squamous part of temporal bone",
+      "sourcePoint": [
+        -0.06588542461395264,
+        0.00497393449768424,
+        1.5994768142700195
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 2.601054401932939
+    },
+    {
+      "structureId": "temporal-1",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 718,
+      "position": [
+        -0.06343089789152145,
+        1.6051112413406372,
+        -0.01783839985728264
+      ],
+      "sourceObject": "Squamous part of temporal bone.j",
+      "sourceEnglish": "Squamous part of temporal bone",
+      "sourcePoint": [
+        -0.06588542461395264,
+        0.00497393449768424,
+        1.5994768142700195
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 4.977754874821257
+    },
+    {
+      "structureId": "temporal-2",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 613,
+      "position": [
+        0.03562549874186516,
+        1.5982911586761475,
+        -0.022939400747418404
+      ],
+      "sourceObject": "Petrous part of temporal bone.j",
+      "sourceEnglish": "Petrous part of temporal bone",
+      "sourcePoint": [
+        -0.03518112748861313,
+        0.009247038513422012,
+        1.591825008392334
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 1.4726502709323233
+    },
+    {
+      "structureId": "temporal-2",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 2497,
+      "position": [
+        -0.03613410145044327,
+        1.5975712537765503,
+        -0.02116050012409687
+      ],
+      "sourceObject": "Petrous part of temporal bone.j",
+      "sourceEnglish": "Petrous part of temporal bone",
+      "sourcePoint": [
+        -0.03518112748861313,
+        0.009247038513422012,
+        1.591825008392334
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9107595041853173
+    },
+    {
+      "structureId": "temporal-3",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 1821,
+      "position": [
+        0.052884798496961594,
+        1.5725911855697632,
+        -0.015871599316596985
+      ],
+      "sourceObject": "Tympanic part of temporal bone.j",
+      "sourceEnglish": "Tympanic part of temporal bone",
+      "sourcePoint": [
+        -0.052237510681152344,
+        0.003229093039408326,
+        1.5681177377700806
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.8274028277058699
+    },
+    {
+      "structureId": "temporal-3",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 1486,
+      "position": [
+        -0.05428770184516907,
+        1.5732312202453613,
+        -0.015901999548077583
+      ],
+      "sourceObject": "Tympanic part of temporal bone.j",
+      "sourceEnglish": "Tympanic part of temporal bone",
+      "sourcePoint": [
+        -0.052237510681152344,
+        0.003229093039408326,
+        1.5681177377700806
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4147177330891955
+    },
+    {
+      "structureId": "temporal-10",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 2016,
+      "position": [
+        0.05633829906582832,
+        1.5671112537384033,
+        -0.028588300570845604
+      ],
+      "sourceObject": "Mastoid process.j",
+      "sourceEnglish": "Mastoid process",
+      "sourcePoint": [
+        -0.05538412556052208,
+        0.016124652698636055,
+        1.5617132186889648
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.4453223800218609
+    },
+    {
+      "structureId": "temporal-10",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 1289,
+      "position": [
+        -0.05705370008945465,
+        1.5669212341308594,
+        -0.0284659992903471
+      ],
+      "sourceObject": "Mastoid process.j",
+      "sourceEnglish": "Mastoid process",
+      "sourcePoint": [
+        -0.05538412556052208,
+        0.016124652698636055,
+        1.5617132186889648
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.6885473208133629
+    },
+    {
+      "structureId": "temporal-11",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 1676,
+      "position": [
+        0.052667200565338135,
+        1.5704412460327148,
+        -0.0337895005941391
+      ],
+      "sourceObject": "Mastoid notch.j",
+      "sourceEnglish": "Mastoid notch",
+      "sourcePoint": [
+        -0.05151544511318207,
+        0.02128293365240097,
+        1.565359354019165
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.614843842475178
+    },
+    {
+      "structureId": "temporal-11",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 1525,
+      "position": [
+        -0.05355039983987808,
+        1.5705912113189697,
+        -0.034193601459264755
+      ],
+      "sourceObject": "Mastoid notch.j",
+      "sourceEnglish": "Mastoid notch",
+      "sourcePoint": [
+        -0.05151544511318207,
+        0.02128293365240097,
+        1.565359354019165
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.1667408018519826
+    },
+    {
+      "structureId": "temporal-12",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 816,
+      "position": [
+        0.038795098662376404,
+        1.553741216659546,
+        -0.011406799778342247
+      ],
+      "sourceObject": "Styloid process of temporal bone.j",
+      "sourceEnglish": "Styloid process of temporal bone",
+      "sourcePoint": [
+        -0.03903235122561455,
+        -0.0010786678176373243,
+        1.5487263202667236
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 0.6090513910339592
+    },
+    {
+      "structureId": "temporal-12",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 2167,
+      "position": [
+        -0.040700700134038925,
+        1.5536812543869019,
+        -0.011533799581229687
+      ],
+      "sourceObject": "Styloid process of temporal bone.j",
+      "sourceEnglish": "Styloid process of temporal bone",
+      "sourcePoint": [
+        -0.03903235122561455,
+        -0.0010786678176373243,
+        1.5487263202667236
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.3691220426826168
+    },
+    {
+      "structureId": "temporal-19",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 610,
+      "position": [
+        0.03674570098519325,
+        1.5970511436462402,
+        -0.019271699711680412
+      ],
+      "sourceObject": "Arcuate eminence.j",
+      "sourceEnglish": "Arcuate eminence",
+      "sourcePoint": [
+        -0.03943358734250069,
+        0.006667953450232744,
+        1.591339349746704
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 3.0156179450768477
+    },
+    {
+      "structureId": "temporal-19",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 2263,
+      "position": [
+        -0.039482101798057556,
+        1.5969412326812744,
+        -0.018428200855851173
+      ],
+      "sourceObject": "Arcuate eminence.j",
+      "sourceEnglish": "Arcuate eminence",
+      "sourcePoint": [
+        -0.03943358734250069,
+        0.006667953450232744,
+        1.591339349746704
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.8681684663045712
+    },
+    {
+      "structureId": "temporal-20",
+      "partId": "FJ3281",
+      "boneId": "temporal",
+      "vertexIndex": 882,
+      "position": [
+        0.041043300181627274,
+        1.592481255531311,
+        -0.01162050012499094
+      ],
+      "sourceObject": "Tegmen tympani.j",
+      "sourceEnglish": "Tegmen tympani",
+      "sourcePoint": [
+        -0.04205874726176262,
+        0.0012303413823246956,
+        1.5873106718063354
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 2.311765711544115
+    },
+    {
+      "structureId": "temporal-20",
+      "partId": "FJ3386",
+      "boneId": "temporal",
+      "vertexIndex": 1709,
+      "position": [
+        -0.04327870160341263,
+        1.5922311544418335,
+        -0.011163299903273582
+      ],
+      "sourceObject": "Tegmen tympani.j",
+      "sourceEnglish": "Tegmen tympani",
+      "sourcePoint": [
+        -0.04205874726176262,
+        0.0012303413823246956,
+        1.5873106718063354
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.5764203719404746
+    },
+    {
+      "structureId": "occipital-2",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3254,
+      "position": [
+        -0.0010455000447109342,
+        1.5795111656188965,
+        -0.015737999230623245
+      ],
+      "sourceObject": "Basilar part of occipital bone.j",
+      "sourceEnglish": "Basilar part of occipital bone",
+      "sourcePoint": [
+        -1.69887073298014e-08,
+        0.0024571502581238747,
+        1.5763169527053833
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.540599636176412
+    },
+    {
+      "structureId": "occipital-3",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 5098,
+      "position": [
+        0.03168930113315582,
+        1.5659211874008179,
+        -0.05214269831776619
+      ],
+      "sourceObject": "Lateral part of occipital bone.j",
+      "sourceEnglish": "Lateral part of occipital bone",
+      "sourcePoint": [
+        0.029450446367263794,
+        0.0390109047293663,
+        1.5606838464736938
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.2155402070717853
+    },
+    {
+      "structureId": "occipital-4",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 4712,
+      "position": [
+        0.021990599110722542,
+        1.6136112213134766,
+        -0.11392830312252045
+      ],
+      "sourceObject": "Squamous part of occipital bone.j",
+      "sourceEnglish": "Squamous part of occipital bone",
+      "sourcePoint": [
+        0.023432496935129166,
+        0.09810951352119446,
+        1.6058156490325928
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.2196364038922978
+    },
+    {
+      "structureId": "occipital-5",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 1763,
+      "position": [
+        -0.024800999090075493,
+        1.5579311847686768,
+        -0.02899169921875
+      ],
+      "sourceObject": "Occipital condyle.j",
+      "sourceEnglish": "Occipital condyle",
+      "sourcePoint": [
+        -0.02300270088016987,
+        0.0170812476426363,
+        1.552512764930725
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.0437259555177407
+    },
+    {
+      "structureId": "occipital-7",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 5364,
+      "position": [
+        0.034880299121141434,
+        1.5631011724472046,
+        -0.05219950154423714
+      ],
+      "sourceObject": "Condylar fossa.j",
+      "sourceEnglish": "Condylar fossa",
+      "sourcePoint": [
+        0.03246362507343292,
+        0.03811074420809746,
+        1.5579782724380493
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.4661478245205473
+    },
+    {
+      "structureId": "occipital-8",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 1784,
+      "position": [
+        -0.027083000168204308,
+        1.5710711479187012,
+        -0.0391170009970665
+      ],
+      "sourceObject": "Condylar canal.j",
+      "sourceEnglish": "Condylar canal",
+      "sourcePoint": [
+        -0.02386005036532879,
+        0.026723086833953857,
+        1.563490629196167
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.9943145147046937
+    },
+    {
+      "structureId": "occipital-9",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 5017,
+      "position": [
+        0.02610510028898716,
+        1.569331169128418,
+        -0.02566169947385788
+      ],
+      "sourceObject": "Jugular notch of occipital bone.j",
+      "sourceEnglish": "Jugular notch of occipital bone",
+      "sourcePoint": [
+        0.029353085905313492,
+        0.013015617616474628,
+        1.5656214952468872
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 3.586079100193017
+    },
+    {
+      "structureId": "occipital-10",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 5480,
+      "position": [
+        0.03706749901175499,
+        1.5730011463165283,
+        -0.024159900844097137
+      ],
+      "sourceObject": "Jugular process.j",
+      "sourceEnglish": "Jugular process",
+      "sourcePoint": [
+        0.03675798699259758,
+        0.011541267856955528,
+        1.5675532817840576
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.2557561523088943
+    },
+    {
+      "structureId": "occipital-11",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3041,
+      "position": [
+        -0.0032217400148510933,
+        1.5710512399673462,
+        -0.010899700224399567
+      ],
+      "sourceObject": "Pharyngeal tubercle.j",
+      "sourceEnglish": "Pharyngeal tubercle",
+      "sourcePoint": [
+        -1.698870910615824e-08,
+        -0.002257315441966057,
+        1.5665574073791504
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.731404472073674
+    },
+    {
+      "structureId": "occipital-13",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3417,
+      "position": [
+        0.0009621239732950926,
+        1.5782911777496338,
+        -0.09761218726634979
+      ],
+      "sourceObject": "External occipital protuberance.j",
+      "sourceEnglish": "External occipital protuberance",
+      "sourcePoint": [
+        -1.69887073298014e-08,
+        0.08395596593618393,
+        1.5729594230651855
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.8525268087013151
+    },
+    {
+      "structureId": "occipital-14",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3285,
+      "position": [
+        0.00024591898545622826,
+        1.574451208114624,
+        -0.08938849717378616
+      ],
+      "sourceObject": "(External occipital crest).j",
+      "sourceEnglish": "(External occipital crest)",
+      "sourcePoint": [
+        -1.69887073298014e-08,
+        0.07690459489822388,
+        1.5700438022613525
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.3267420059753787
+    },
+    {
+      "structureId": "occipital-15",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 4694,
+      "position": [
+        0.02579299919307232,
+        1.5900311470031738,
+        -0.10247184336185455
+      ],
+      "sourceObject": "Supreme nuchal line.j",
+      "sourceEnglish": "Supreme nuchal line",
+      "sourcePoint": [
+        0.02431260608136654,
+        0.0872582495212555,
+        1.582866907119751
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.0906752866091147
+    },
+    {
+      "structureId": "occipital-16",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 4528,
+      "position": [
+        0.019543800503015518,
+        1.5808712244033813,
+        -0.08984290063381195
+      ],
+      "sourceObject": "Superior nuchal line.j",
+      "sourceEnglish": "Superior nuchal line",
+      "sourcePoint": [
+        0.020698344334959984,
+        0.07796182483434677,
+        1.5726566314697266
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 3.6537189675270327
+    },
+    {
+      "structureId": "occipital-17",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 4151,
+      "position": [
+        0.01737309992313385,
+        1.5669611692428589,
+        -0.08067499846220016
+      ],
+      "sourceObject": "Inferior nuchal line.j",
+      "sourceEnglish": "Inferior nuchal line",
+      "sourcePoint": [
+        0.01765909232199192,
+        0.06588396430015564,
+        1.5613293647766113
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.8843891778063498
+    },
+    {
+      "structureId": "occipital-18",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3286,
+      "position": [
+        -3.2552899938309565e-05,
+        1.5880812406539917,
+        -0.09138662368059158
+      ],
+      "sourceObject": "Internal occipital protuberance.j",
+      "sourceEnglish": "Internal occipital protuberance",
+      "sourcePoint": [
+        -1.69887073298014e-08,
+        0.07650400698184967,
+        1.581952452659607
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9614097141630398
+    },
+    {
+      "structureId": "occipital-19",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3071,
+      "position": [
+        -0.005729190073907375,
+        1.5872511863708496,
+        -0.09132113307714462
+      ],
+      "sourceObject": "Cruciform eminence.j",
+      "sourceEnglish": "Cruciform eminence",
+      "sourcePoint": [
+        -0.005378797650337219,
+        0.07756397128105164,
+        1.5812656879425049
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.6782968341106882
+    },
+    {
+      "structureId": "occipital-20",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 3404,
+      "position": [
+        -0.0011342799989506602,
+        1.57193124294281,
+        -0.07854130119085312
+      ],
+      "sourceObject": "(Internal occipital crest).j",
+      "sourceEnglish": "(Internal occipital crest)",
+      "sourcePoint": [
+        -1.69887073298014e-08,
+        0.06461124867200851,
+        1.566240906715393
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4864202118842589
+    },
+    {
+      "structureId": "occipital-21",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 1641,
+      "position": [
+        -0.031168600544333458,
+        1.586731195449829,
+        -0.08959130197763443
+      ],
+      "sourceObject": "Groove for transverse sinus.j",
+      "sourceEnglish": "Groove for transverse sinus",
+      "sourcePoint": [
+        -0.029892293736338615,
+        0.07512922585010529,
+        1.5808790922164917
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.3280164062852309
+    },
+    {
+      "structureId": "sphenoid-1",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2503,
+      "position": [
+        0.0019378300057724118,
+        1.5857012271881104,
+        0.015472999773919582
+      ],
+      "sourceObject": "Body of sphenoid bone.j",
+      "sourceEnglish": "Body of sphenoid bone",
+      "sourcePoint": [
+        0.0023445747792720795,
+        -0.025523241609334946,
+        1.5810065269470215
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.7182744713947304
+    },
+    {
+      "structureId": "sphenoid-2",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 656,
+      "position": [
+        -0.02449049986898899,
+        1.6166012287139893,
+        0.025905000045895576
+      ],
+      "sourceObject": "Lesser wing.j",
+      "sourceEnglish": "Lesser wing",
+      "sourcePoint": [
+        -0.023303231224417686,
+        -0.03669928014278412,
+        1.6102094650268555
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.4042730577564067
+    },
+    {
+      "structureId": "sphenoid-3",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 244,
+      "position": [
+        -0.04235370084643364,
+        1.6195812225341797,
+        0.0342399999499321
+      ],
+      "sourceObject": "Greater wing.j",
+      "sourceEnglish": "Greater wing",
+      "sourcePoint": [
+        -0.038347139954566956,
+        -0.04400762543082237,
+        1.6133112907409668
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.5487797472730067
+    },
+    {
+      "structureId": "sphenoid-4",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1420,
+      "position": [
+        -0.014145899564027786,
+        1.5733312368392944,
+        0.024059999734163284
+      ],
+      "sourceObject": "Pterygoid process .j",
+      "sourceEnglish": "Pterygoid process ",
+      "sourcePoint": [
+        -0.014276362955570221,
+        -0.03630673140287399,
+        1.5693336725234985
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.0385695039172713
+    },
+    {
+      "structureId": "sphenoid-5",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2836,
+      "position": [
+        0.0010917199542745948,
+        1.599291205406189,
+        0.005508999805897474
+      ],
+      "sourceObject": "Sella turcica.j",
+      "sourceEnglish": "Sella turcica",
+      "sourcePoint": [
+        -1.7003912944346666e-08,
+        -0.017459392547607422,
+        1.5930293798446655
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.9017010625360495
+    },
+    {
+      "structureId": "sphenoid-6",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2836,
+      "position": [
+        0.0010917199542745948,
+        1.599291205406189,
+        0.005508999805897474
+      ],
+      "sourceObject": "Hypophysial fossa.j",
+      "sourceEnglish": "Hypophysial fossa",
+      "sourcePoint": [
+        -1.6996636986732483e-08,
+        -0.01559413131326437,
+        1.5934717655181885
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.477264266257711
+    },
+    {
+      "structureId": "sphenoid-7",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2300,
+      "position": [
+        -0.001113120000809431,
+        1.6088311672210693,
+        0.012811999768018723
+      ],
+      "sourceObject": "Tuberculum sellae.j",
+      "sourceEnglish": "Tuberculum sellae",
+      "sourcePoint": [
+        -1.6996636986732483e-08,
+        -0.022481156513094902,
+        1.6011396646499634
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.4899184818262285
+    },
+    {
+      "structureId": "sphenoid-8",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2308,
+      "position": [
+        -4.276830077287741e-05,
+        1.6078212261199951,
+        -0.0038107000291347504
+      ],
+      "sourceObject": "Dorsum sellae.j",
+      "sourceEnglish": "Dorsum sellae",
+      "sourcePoint": [
+        -1.6996636986732483e-08,
+        -0.009353646077215672,
+        1.6012834310531616
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.5163013971094068
+    },
+    {
+      "structureId": "sphenoid-9",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 3366,
+      "position": [
+        0.013007000088691711,
+        1.6088712215423584,
+        0.008024999871850014
+      ],
+      "sourceObject": "Anterior clinoid process.j",
+      "sourceEnglish": "Anterior clinoid process",
+      "sourcePoint": [
+        0.013416562229394913,
+        -0.0194481760263443,
+        1.6028646230697632
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.20177261993784687
+    },
+    {
+      "structureId": "sphenoid-10",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2876,
+      "position": [
+        0.006378190126270056,
+        1.6070811748504639,
+        -0.004711700137704611
+      ],
+      "sourceObject": "Posterior clinoid process.j",
+      "sourceEnglish": "Posterior clinoid process",
+      "sourcePoint": [
+        0.007140107452869415,
+        -0.007469508331269026,
+        1.6011396646499634
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.3843243415484703
+    },
+    {
+      "structureId": "sphenoid-12",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1483,
+      "position": [
+        -0.014927100390195847,
+        1.6085212230682373,
+        0.021112000569701195
+      ],
+      "sourceObject": "Optic canal.j",
+      "sourceEnglish": "Optic canal",
+      "sourcePoint": [
+        -0.012494543567299843,
+        -0.031372565776109695,
+        1.6024384498596191
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.7078799473106498
+    },
+    {
+      "structureId": "sphenoid-14",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1315,
+      "position": [
+        -0.01733670011162758,
+        1.5965012311935425,
+        0.014026000164449215
+      ],
+      "sourceObject": "Foramen rotundum.j",
+      "sourceEnglish": "Foramen rotundum",
+      "sourcePoint": [
+        -0.016690947115421295,
+        -0.025523239746689796,
+        1.591470718383789
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9862793909590235
+    },
+    {
+      "structureId": "sphenoid-15",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 4176,
+      "position": [
+        0.02379010058939457,
+        1.5833611488342285,
+        -0.0007236999808810651
+      ],
+      "sourceObject": "Foramen ovale.j",
+      "sourceEnglish": "Foramen ovale",
+      "sourcePoint": [
+        0.02400171384215355,
+        -0.01327289454638958,
+        1.578361988067627
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.2232966529163822
+    },
+    {
+      "structureId": "sphenoid-16",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 4432,
+      "position": [
+        0.029102100059390068,
+        1.581841230392456,
+        -0.004076799843460321
+      ],
+      "sourceObject": "Foramen spinosum.j",
+      "sourceEnglish": "Foramen spinosum",
+      "sourcePoint": [
+        0.029196692630648613,
+        -0.008235826157033443,
+        1.577892780303955
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.5626386313132599
+    },
+    {
+      "structureId": "sphenoid-19",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 3033,
+      "position": [
+        0.012354699894785881,
+        1.5594911575317383,
+        0.02365799993276596
+      ],
+      "sourceObject": "Medial pterygoid plate.j",
+      "sourceEnglish": "Medial pterygoid plate",
+      "sourcePoint": [
+        0.01298673078417778,
+        -0.03498035669326782,
+        1.554447889328003
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.2925526183970282
+    },
+    {
+      "structureId": "sphenoid-20",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 4140,
+      "position": [
+        0.02555209957063198,
+        1.5594512224197388,
+        0.020969999954104424
+      ],
+      "sourceObject": "Lateral pterygoid plate.j",
+      "sourceEnglish": "Lateral pterygoid plate",
+      "sourcePoint": [
+        0.02545246109366417,
+        -0.0324009507894516,
+        1.5544377565383911
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.35526622856402246
+    },
+    {
+      "structureId": "sphenoid-21",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1257,
+      "position": [
+        -0.016849100589752197,
+        1.5712212324142456,
+        0.02011300064623356
+      ],
+      "sourceObject": "Pterygoid fossa.j",
+      "sourceEnglish": "Pterygoid fossa",
+      "sourcePoint": [
+        -0.0158827044069767,
+        -0.03128993511199951,
+        1.5652029514312744
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9621948464463596
+    },
+    {
+      "structureId": "sphenoid-22",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1722,
+      "position": [
+        -0.014743500389158726,
+        1.5578612089157104,
+        0.02049900032579899
+      ],
+      "sourceObject": "Pterygoid hamulus.j",
+      "sourceEnglish": "Pterygoid hamulus",
+      "sourcePoint": [
+        -0.015186995267868042,
+        -0.029508208855986595,
+        1.5505965948104858
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 3.9361664093899043
+    },
+    {
+      "structureId": "sphenoid-23",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2982,
+      "position": [
+        0.010414700023829937,
+        1.5849312543869019,
+        0.00826799962669611
+      ],
+      "sourceObject": "Pterygoid canal.j",
+      "sourceEnglish": "Pterygoid canal",
+      "sourcePoint": [
+        0.014556593261659145,
+        -0.021152203902602196,
+        1.582432508468628
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 5.010176525161261
+    },
+    {
+      "structureId": "sphenoid-24",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 3935,
+      "position": [
+        0.019589800387620926,
+        1.5829012393951416,
+        0.003926999866962433
+      ],
+      "sourceObject": "Scaphoid fossa.j",
+      "sourceEnglish": "Scaphoid fossa",
+      "sourcePoint": [
+        0.01943451352417469,
+        -0.015206671319901943,
+        1.5771327018737793
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.7335022468974057
+    },
+    {
+      "structureId": "mandible-1",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 2099,
+      "position": [
+        0.03474310040473938,
+        1.519151210784912,
+        0.0411980003118515
+      ],
+      "sourceObject": "Body of mandible.j",
+      "sourceEnglish": "Body of mandible",
+      "sourcePoint": [
+        0.032535191625356674,
+        -0.053458958864212036,
+        1.5157313346862793
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.62507658857728
+    },
+    {
+      "structureId": "mandible-2",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 2096,
+      "position": [
+        0.03188470005989075,
+        1.5112812519073486,
+        0.04285300150513649
+      ],
+      "sourceObject": "Base of mandible.j",
+      "sourceEnglish": "Base of mandible",
+      "sourcePoint": [
+        0.03122756816446781,
+        -0.05490369722247124,
+        1.5081450939178467
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.3807274994331988
+    },
+    {
+      "structureId": "mandible-6",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 1200,
+      "position": [
+        -0.01004560012370348,
+        1.503461241722107,
+        0.06724599748849869
+      ],
+      "sourceObject": "Mental protuberance.j",
+      "sourceEnglish": "Mental protuberance",
+      "sourcePoint": [
+        -0.008713243529200554,
+        -0.0775243416428566,
+        1.4997570514678955
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.5038940410436954
+    },
+    {
+      "structureId": "mandible-7",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 1460,
+      "position": [
+        0.005059539806097746,
+        1.5010411739349365,
+        0.06823299825191498
+      ],
+      "sourceObject": "Mental tubercle.j",
+      "sourceEnglish": "Mental tubercle",
+      "sourcePoint": [
+        0.005489352624863386,
+        -0.07849638164043427,
+        1.4978255033493042
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.42103656070574424
+    },
+    {
+      "structureId": "mandible-8",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 977,
+      "position": [
+        -0.023130400106310844,
+        1.5141011476516724,
+        0.05711999908089638
+      ],
+      "sourceObject": "Mental foramen.j",
+      "sourceEnglish": "Mental foramen",
+      "sourcePoint": [
+        -0.021645307540893555,
+        -0.06750144064426422,
+        1.5103570222854614
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.332256960172891
+    },
+    {
+      "structureId": "mandible-9",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 2200,
+      "position": [
+        0.038097500801086426,
+        1.532371163368225,
+        0.03695400059223175
+      ],
+      "sourceObject": "Oblique line of mandible.j",
+      "sourceEnglish": "Oblique line of mandible",
+      "sourcePoint": [
+        0.03728659078478813,
+        -0.04743073135614395,
+        1.52798330783844
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.0104417625462385
+    },
+    {
+      "structureId": "mandible-11",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 1590,
+      "position": [
+        0.005173460114747286,
+        1.5042911767959595,
+        0.05792099982500076
+      ],
+      "sourceObject": "Digastric fossa.j",
+      "sourceEnglish": "Digastric fossa",
+      "sourcePoint": [
+        0.006318528670817614,
+        -0.06878742575645447,
+        1.5003786087036133
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.7761383931487229
+    },
+    {
+      "structureId": "mandible-12",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 2058,
+      "position": [
+        0.02991889975965023,
+        1.5348812341690063,
+        0.021428000181913376
+      ],
+      "sourceObject": "Mylohyoid line.j",
+      "sourceEnglish": "Mylohyoid line",
+      "sourcePoint": [
+        0.030557211488485336,
+        -0.03231430426239967,
+        1.5279865264892578
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 2.9432459538772746
+    },
+    {
+      "structureId": "mandible-13",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 1627,
+      "position": [
+        0.009521660394966602,
+        1.5109812021255493,
+        0.05615299940109253
+      ],
+      "sourceObject": "Sublingual fossa.j",
+      "sourceEnglish": "Sublingual fossa",
+      "sourcePoint": [
+        0.008951532654464245,
+        -0.06751357764005661,
+        1.5083727836608887
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.702164111006608
+    },
+    {
+      "structureId": "frontal-6",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 6488,
+      "position": [
+        0.0347663015127182,
+        1.651591181755066,
+        0.06883899867534637
+      ],
+      "sourceObject": "Frontal eminence.j",
+      "sourceEnglish": "Frontal eminence",
+      "sourcePoint": [
+        0.0342123918235302,
+        -0.0786358043551445,
+        1.645418643951416
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9207863695625687
+    },
+    {
+      "structureId": "frontal-16",
+      "partId": "FJ3200",
+      "boneId": "frontal",
+      "vertexIndex": 3771,
+      "position": [
+        -0.005136230029165745,
+        1.6069011688232422,
+        0.05128899961709976
+      ],
+      "sourceObject": "Ethmoidal notch.j",
+      "sourceEnglish": "Ethmoidal notch",
+      "sourcePoint": [
+        -1.4893230648738154e-08,
+        -0.06200766935944557,
+        1.6011443138122559
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 4.360313246151654
+    },
+    {
+      "structureId": "parietal-3",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 8117,
+      "position": [
+        0.06954559683799744,
+        1.6721911430358887,
+        -0.04539019986987114
+      ],
+      "sourceObject": "Parietal eminence.j",
+      "sourceEnglish": "Parietal eminence",
+      "sourcePoint": [
+        -0.06861193478107452,
+        0.031424809247255325,
+        1.6650816202163696
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 1.5088766835219738
+    },
+    {
+      "structureId": "parietal-3",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 286,
+      "position": [
+        -0.07050160318613052,
+        1.6736512184143066,
+        -0.042956698685884476
+      ],
+      "sourceObject": "Parietal eminence.j",
+      "sourceEnglish": "Parietal eminence",
+      "sourcePoint": [
+        -0.06861193478107452,
+        0.031424809247255325,
+        1.6650816202163696
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.4693235457554084
+    },
+    {
+      "structureId": "parietal-11",
+      "partId": "FJ3274",
+      "boneId": "parietal",
+      "vertexIndex": 6824,
+      "position": [
+        0.05524430051445961,
+        1.6240311861038208,
+        0.02310200035572052
+      ],
+      "sourceObject": "Sphenoidal angle of parietal bone.j",
+      "sourceEnglish": "Sphenoidal angle of parietal bone",
+      "sourcePoint": [
+        -0.05573534220457077,
+        -0.03493322432041168,
+        1.6165850162506104
+      ],
+      "mirroredForSide": true,
+      "surfaceProjectionMm": 1.7998243424744567
+    },
+    {
+      "structureId": "parietal-11",
+      "partId": "FJ3380",
+      "boneId": "parietal",
+      "vertexIndex": 1259,
+      "position": [
+        -0.058209601789712906,
+        1.6225612163543701,
+        0.023000000044703484
+      ],
+      "sourceObject": "Sphenoidal angle of parietal bone.j",
+      "sourceEnglish": "Sphenoidal angle of parietal bone",
+      "sourcePoint": [
+        -0.05573534220457077,
+        -0.03493322432041168,
+        1.6165850162506104
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.9557385897939051
+    },
+    {
+      "structureId": "occipital-6",
+      "partId": "FJ3309",
+      "boneId": "occipital",
+      "vertexIndex": 2256,
+      "position": [
+        -0.020271100103855133,
+        1.5688111782073975,
+        -0.024268800392746925
+      ],
+      "sourceObject": "Hypoglossal canal.j",
+      "sourceEnglish": "Hypoglossal canal",
+      "sourcePoint": [
+        -0.018188970163464546,
+        0.014758353121578693,
+        1.5630608797073364
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 3.297062212823653
+    },
+    {
+      "structureId": "sphenoid-11",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2062,
+      "position": [
+        -0.0007199899991974235,
+        1.6103612184524536,
+        0.01563500054180622
+      ],
+      "sourceObject": "Chiasmatic sulcus.j",
+      "sourceEnglish": "Chiasmatic sulcus",
+      "sourcePoint": [
+        -1.6996636986732483e-08,
+        -0.026377230882644653,
+        1.603854775428772
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.7713359469302394
+    },
+    {
+      "structureId": "sphenoid-17",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 1831,
+      "position": [
+        -0.01281729992479086,
+        1.593101143836975,
+        -7.170000026235357e-05
+      ],
+      "sourceObject": "Carotid sulcus.j",
+      "sourceEnglish": "Carotid sulcus",
+      "sourcePoint": [
+        -0.011697272770106792,
+        -0.011767818592488766,
+        1.5874316692352295
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.12175299291589656
+    },
+    {
+      "structureId": "sphenoid-18",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 4490,
+      "position": [
+        0.03160519897937775,
+        1.5724711418151855,
+        -0.0029424000531435013
+      ],
+      "sourceObject": "Spine of sphenoid bone.j",
+      "sourceEnglish": "Spine of sphenoid bone",
+      "sourcePoint": [
+        0.0314704030752182,
+        -0.008758694864809513,
+        1.566957712173462
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 0.44629666644420074
+    },
+    {
+      "structureId": "sphenoid-26",
+      "partId": "FJ3394",
+      "boneId": "sphenoid",
+      "vertexIndex": 2121,
+      "position": [
+        -0.004756370093673468,
+        1.6073012351989746,
+        0.030966000631451607
+      ],
+      "sourceObject": "Sphenoidal crest.j",
+      "sourceEnglish": "Sphenoidal crest",
+      "sourcePoint": [
+        -1.696753315627575e-08,
+        -0.04353052377700806,
+        1.5979669094085693
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 5.474037999963988
+    },
+    {
+      "structureId": "mandible-10",
+      "partId": "FJ3289",
+      "boneId": "mandible",
+      "vertexIndex": 1496,
+      "position": [
+        0.0006798169924877584,
+        1.513181209564209,
+        0.061163000762462616
+      ],
+      "sourceObject": "Superior mental spine.j",
+      "sourceEnglish": "Superior mental spine",
+      "sourcePoint": [
+        0.0012323263799771667,
+        -0.07077912241220474,
+        1.5088809728622437
+      ],
+      "mirroredForSide": false,
+      "surfaceProjectionMm": 1.297975874633591
+    }
+  ],
+  "unmappedStructureIds": [
+    "frontal-4",
+    "frontal-7",
+    "frontal-9",
+    "frontal-14",
+    "frontal-20",
+    "parietal-15",
+    "parietal-16",
+    "parietal-17",
+    "parietal-18",
+    "temporal-4",
+    "temporal-5",
+    "temporal-6",
+    "temporal-7",
+    "temporal-8",
+    "temporal-9",
+    "temporal-13",
+    "temporal-14",
+    "temporal-15",
+    "temporal-16",
+    "temporal-17",
+    "temporal-18",
+    "temporal-21",
+    "temporal-22",
+    "temporal-23",
+    "temporal-24",
+    "temporal-25",
+    "temporal-26",
+    "temporal-27",
+    "temporal-28",
+    "temporal-29",
+    "occipital-1",
+    "occipital-12",
+    "occipital-22",
+    "sphenoid-13",
+    "sphenoid-25",
+    "sphenoid-27",
+    "sphenoid-28",
+    "ethmoid-1",
+    "ethmoid-2",
+    "ethmoid-3",
+    "ethmoid-4",
+    "ethmoid-5",
+    "ethmoid-6",
+    "ethmoid-7",
+    "ethmoid-8",
+    "ethmoid-9",
+    "ethmoid-10",
+    "ethmoid-11",
+    "ethmoid-12",
+    "ethmoid-13",
+    "ethmoid-14",
+    "maxilla-1",
+    "maxilla-2",
+    "maxilla-3",
+    "maxilla-4",
+    "maxilla-5",
+    "maxilla-6",
+    "maxilla-7",
+    "maxilla-8",
+    "maxilla-9",
+    "maxilla-10",
+    "maxilla-11",
+    "maxilla-12",
+    "maxilla-13",
+    "maxilla-14",
+    "maxilla-15",
+    "maxilla-16",
+    "maxilla-17",
+    "maxilla-18",
+    "maxilla-19",
+    "maxilla-20",
+    "maxilla-21",
+    "maxilla-22",
+    "maxilla-23",
+    "maxilla-24",
+    "maxilla-25",
+    "maxilla-26",
+    "maxilla-27",
+    "zygomatic-1",
+    "zygomatic-2",
+    "zygomatic-3",
+    "zygomatic-4",
+    "zygomatic-5",
+    "zygomatic-6",
+    "zygomatic-7",
+    "zygomatic-8",
+    "nasal-1",
+    "nasal-2",
+    "nasal-3",
+    "nasal-4",
+    "lacrimal-1",
+    "lacrimal-2",
+    "lacrimal-3",
+    "lacrimal-4",
+    "palatine-1",
+    "palatine-2",
+    "palatine-3",
+    "palatine-4",
+    "palatine-5",
+    "palatine-6",
+    "palatine-7",
+    "palatine-8",
+    "palatine-9",
+    "palatine-10",
+    "palatine-11",
+    "palatine-12",
+    "palatine-13",
+    "palatine-14",
+    "palatine-15",
+    "palatine-16",
+    "vomer-1",
+    "vomer-2",
+    "concha-1",
+    "concha-2",
+    "concha-3",
+    "mandible-3",
+    "mandible-4",
+    "mandible-5",
+    "mandible-14",
+    "mandible-15",
+    "mandible-16",
+    "mandible-17",
+    "mandible-18",
+    "mandible-19",
+    "mandible-20",
+    "mandible-21",
+    "mandible-22",
+    "mandible-23",
+    "mandible-24",
+    "mandible-25",
+    "mandible-26",
+    "mandible-27",
+    "mandible-28",
+    "mandible-29"
+  ]
+}

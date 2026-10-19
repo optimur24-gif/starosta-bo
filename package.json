@@ -1,0 +1,46 @@
+{
+  "name": "cranium-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node scripts/serve.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:bot": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "verify:models": "python3 scripts/import-models.py --verify-only && python3 scripts/verify-landmarks.py",
+    "check": "npm run verify:models && npm run test && npm run test:bot && npm run build",
+    "format": "prettier --write src scripts/serve.mjs tests .github *.json index.html README.md AGENTS.md THIRD_PARTY_NOTICES.md docs",
+    "bot": "python3 main.py"
+  },
+  "dependencies": {
+    "@fontsource/golos-text": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "jsdom": "^27.2.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.0",
+    "vitest": "^4.0.0"
+  }
+}

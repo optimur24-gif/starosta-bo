@@ -1,0 +1,63 @@
+{
+  "repository": "https://github.com/openstax/osbooks-anatomy-physiology",
+  "commit": "5ae32b3f4bc24ed003e91dc38bf47dba80751044",
+  "license": "CC BY-NC-SA 4.0",
+  "modified": false,
+  "images": [
+    {
+      "file": "anterior.jpg",
+      "original": "704_Skull-01.jpg",
+      "sha256": "7eecc087c4660c09ec2e145fe9daf051aa23f6b48e9591fe0142036497bbce8e"
+    },
+    {
+      "file": "lateral.jpg",
+      "original": "705_Lateral_View_of_Skull-01.jpg",
+      "sha256": "6c4c4d3a09d782416d92ad33ac45c48e33d75df7582955992571020977d1eea2"
+    },
+    {
+      "file": "sagittal.jpg",
+      "original": "706_Sagittal_Section_of_Skull-01.jpg",
+      "sha256": "47411834dd134ca2ad2cddfcdeec0477689bb9dbfed16b48d69b7f95f794500b"
+    },
+    {
+      "file": "base.jpg",
+      "original": "707_Superior-Inferior_View_of_Skull_Base-01.jpg",
+      "sha256": "6cab6ed69994206d6298c5b470203575cf0f0246c6ad545be91e0a916a5c2df0"
+    },
+    {
+      "file": "temporal.jpg",
+      "original": "708_Temporal_Bone.jpg",
+      "sha256": "f684bc4712cea9540260c44bc39b515620863e174a7563fefd01b3fb155cd269"
+    },
+    {
+      "file": "sphenoid.jpg",
+      "original": "709_Sphenoid_Bone.jpg",
+      "sha256": "5bcafebfb7d5ba65bfadfd277aaccff876e3e5bfea5915af54806bbf295bea49"
+    },
+    {
+      "file": "ethmoid.jpg",
+      "original": "710_Ethmoid_Bone.jpg",
+      "sha256": "b4f92e91c7fc1614c1d505936fb895a545defe5397f1619ceebafe867a8f7a4d"
+    },
+    {
+      "file": "maxilla.jpg",
+      "original": "711_Maxilla.jpg",
+      "sha256": "2de6f3c9901056a84aac1b79d32f3c90399f1d3cd65277ae1423f2c032196e67"
+    },
+    {
+      "file": "mandible.jpg",
+      "original": "726_Mandible.jpg",
+      "sha256": "7b6a8324e7538430ace7c7904ef31c146316cb676e334aec5ea046a2c0b814eb"
+    },
+    {
+      "file": "posterior.jpg",
+      "original": "730_Posterior_View_Skull.jpg",
+      "sha256": "d27939bdf099bdaaa51227a1d267a8cc5a66d2c7b35deea6b881d8b44d50faab"
+    },
+    {
+      "file": "nasal-cavity.jpg",
+      "original": "714_Bone_of_Nasal_Cavity.jpg",
+      "sha256": "c7618adb7289016f5b0a554fd5e1c880d1897d6957804629bca2cf3f019d0c02"
+    }
+  ]
+}

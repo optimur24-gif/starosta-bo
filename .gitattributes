@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.bin -text
+*.jpg -text
+*.png -text
+*.woff -text
+*.woff2 -text
+public/models/landmarks.json -text
+public/illustrations/OPENSTAX-LICENSE.txt -text
+public/licenses/Z-Anatomy-LICENSE.txt -text
