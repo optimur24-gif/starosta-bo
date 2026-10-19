@@ -22,6 +22,8 @@ jobs:
       - run: npm run check
       - name: Build the BotHost container
         run: docker build -t cranium-bothost:ci .
+        env:
+          DOCKER_BUILDKIT: "0"
       - name: Start the actual BotHost image
         run: |
           docker run -d --name cranium-ci -p 4173:3000 cranium-bothost:ci

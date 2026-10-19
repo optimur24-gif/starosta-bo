@@ -1,9 +1,12 @@
 FROM node:24-bookworm-slim AS frontend
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN --mount=type=secret,id=build_ca \
-    if [ -f /run/secrets/build_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/build_ca; fi; \
-    npm ci --no-audit --no-fund
+ARG BUILD_CA_CERT
+RUN if [ -n "$BUILD_CA_CERT" ]; then \
+      printf '%s\n' "$BUILD_CA_CERT" > /tmp/build-ca.crt; \
+      export NODE_EXTRA_CA_CERTS=/tmp/build-ca.crt; \
+    fi; \
+    npm ci --no-audit --no-fund && rm -f /tmp/build-ca.crt
 COPY index.html tsconfig.json vite.config.ts ./
 COPY src ./src
 COPY public ./public
@@ -11,8 +14,9 @@ RUN BASE_PATH=/ npm run build
 
 FROM python:3.12-slim-bookworm
 WORKDIR /app
-COPY --from=frontend --chown=65532:65532 /app/dist ./dist
-COPY --chmod=644 app.py main.py requirements.txt ./
+COPY --from=frontend /app/dist ./dist
+COPY app.py main.py requirements.txt ./
+RUN chmod -R a+rX /app
 ENV PYTHONUNBUFFERED=1 PORT=3000 BASE_PATH=/
 EXPOSE 3000
 USER 65532:65532
