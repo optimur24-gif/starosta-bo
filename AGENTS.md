@@ -1,6 +1,6 @@
 # Cranium development
 
-- This is a Telegram Mini App for an anatomical skull atlas, hosted statically on GitHub Pages, with a separate Python bot for bothost.ru.
+- This is a Telegram Mini App for an anatomical skull atlas. The primary deployment is one BotHost Docker container: app.py serves the built frontend on port 3000 and runs the Telegram bot. GitHub Pages plus a separate main.py bot remains optional. See docs/BOTHOST.md for the screenshot-based form settings and two-stage first deployment.
 - The user's explicit requirement is **a real 3D model with animations**. Keep the 22 independent BodyParts3D bones, left/right selection, isolated bone mode, orbit/zoom, animated assembly/disassembly and optional rotation. A flat SVG or screenshot cannot replace the main 3D workflow.
 - Use the existing checkout. Do not create a worktree unless the user requests one.
 - Preserve source provenance, FJ/FMA identifiers, asset checksums and licenses. Do not replace real source geometry with fabricated shapes, or assign medical structures arbitrary 3D coordinates.
@@ -8,4 +8,5 @@
 - Read `docs/ANATOMY.md` before changing educational content; it distinguishes primary medical sources, editorial descriptions, nomenclature variants and validation limits.
 - `npm run check` runs meaningful data/logic/bot checks and builds the app. `npm run test:e2e` exercises Chromium on desktop/mobile, including real WebGL rendering. Test the GitHub Pages subpath after changes to asset loading: `BASE_PATH=/starosta-bo/ npm run build` then `E2E_BASE_PATH=/starosta-bo/ npm run test:e2e`.
 - Keep BOT_TOKEN out of browser code, VITE variables, commits and logs. The frontend uses no credentials. The bot reads BOT_TOKEN and MINI_APP_URL only from its server environment.
+- The Dockerfile builds the frontend with Node 24 and runs only Python 3.12, as an unprivileged user. app.py starts the site even before MINI_APP_URL is known; after BotHost assigns HTTPS, set that URL and restart to enable the bot. npm start and browser tests use --web-only so injected credentials cannot accidentally launch polling during frontend checks. /healthz distinguishes web readiness from bot state. Test the real image with E2E_BASE_URL when changing deployment/runtime code.
 - No publication has been authorized merely by preparing code. Do not claim a live GitHub Pages or BotHost deployment without verifying it.

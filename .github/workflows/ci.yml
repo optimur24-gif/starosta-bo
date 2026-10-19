@@ -20,8 +20,22 @@ jobs:
           python-version-file: .python-version
       - run: npm ci
       - run: npm run check
+      - name: Build the BotHost container
+        run: docker build -t cranium-bothost:ci .
+      - name: Start the actual BotHost image
+        run: |
+          docker run -d --name cranium-ci -p 4173:3000 cranium-bothost:ci
+          curl -fsS --retry 15 --retry-all-errors --retry-delay 1 http://127.0.0.1:4173/healthz
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+        env:
+          E2E_BASE_URL: http://127.0.0.1:4173/
+      - name: Show container diagnostics on failure
+        if: failure()
+        run: docker logs cranium-ci || true
+      - name: Stop the test container
+        if: always()
+        run: docker rm -f cranium-ci || true
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

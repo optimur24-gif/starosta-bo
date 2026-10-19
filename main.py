@@ -7,9 +7,9 @@ import os
 import re
 import signal
 import sys
-import time
 from dataclasses import dataclass
-from typing import Any
+from threading import Event
+from typing import Any, Callable
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
@@ -109,7 +109,13 @@ def response_for_update(update: dict[str, Any], app_url: str) -> dict[str, Any] 
     }
 
 
-def run(settings: Settings, check_only: bool = False) -> None:
+def run(
+    settings: Settings,
+    check_only: bool = False,
+    *,
+    stop_event: Event | None = None,
+    on_ready: Callable[[], None] | None = None,
+) -> None:
     client = TelegramClient(settings.token)
     client.call("getMe")
     webhook = client.call("getWebhookInfo") or {}
@@ -124,22 +130,24 @@ def run(settings: Settings, check_only: bool = False) -> None:
         {"command": "help", "description": "О приложении"},
     ]})
     client.call("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "Атлас", "web_app": {"url": settings.app_url}}})
-    running = True
+    stopped = stop_event if stop_event is not None else Event()
 
     def stop(_signum: int, _frame: Any) -> None:
-        nonlocal running
-        running = False
+        stopped.set()
 
-    signal.signal(signal.SIGTERM, stop)
-    signal.signal(signal.SIGINT, stop)
+    if stop_event is None:
+        signal.signal(signal.SIGTERM, stop)
+        signal.signal(signal.SIGINT, stop)
     offset = 0
     backoff = 1
     LOGGER.info("Бот запущен. Ожидание личных команд /start, /atlas и /help.")
-    while running:
+    if on_ready:
+        on_ready()
+    while not stopped.is_set():
         try:
             updates = client.call("getUpdates", {"offset": offset, "timeout": 25, "allowed_updates": ["message"]}) or []
             for update in updates:
-                if not running:
+                if stopped.is_set():
                     break
                 response = response_for_update(update, settings.app_url)
                 if response:
@@ -157,10 +165,7 @@ def run(settings: Settings, check_only: bool = False) -> None:
                 raise ConfigError("Конфликт polling: остановите другую копию бота или проверьте webhook.") from None
             LOGGER.warning("Telegram API временно недоступен (код %s). Повтор подключения.", exc.code)
             delay = min(max(exc.retry_after, backoff), 300)
-            for _ in range(delay):
-                if not running:
-                    break
-                time.sleep(1)
+            stopped.wait(delay)
             backoff = min(backoff * 2, 30)
 
 

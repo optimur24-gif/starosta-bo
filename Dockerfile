@@ -1,6 +1,20 @@
-FROM python:3.12-slim
+FROM node:24-bookworm-slim AS frontend
 WORKDIR /app
-COPY --chmod=644 main.py requirements.txt ./
-ENV PYTHONUNBUFFERED=1
+COPY package.json package-lock.json ./
+RUN --mount=type=secret,id=build_ca \
+    if [ -f /run/secrets/build_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/build_ca; fi; \
+    npm ci --no-audit --no-fund
+COPY index.html tsconfig.json vite.config.ts ./
+COPY src ./src
+COPY public ./public
+RUN BASE_PATH=/ npm run build
+
+FROM python:3.12-slim-bookworm
+WORKDIR /app
+COPY --from=frontend --chown=65532:65532 /app/dist ./dist
+COPY --chmod=644 app.py main.py requirements.txt ./
+ENV PYTHONUNBUFFERED=1 PORT=3000 BASE_PATH=/
+EXPOSE 3000
 USER 65532:65532
-CMD ["python", "main.py"]
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 CMD ["python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:' + __import__('os').environ.get('PORT', '3000') + '/healthz', timeout=4).read()"]
+CMD ["python", "app.py"]
