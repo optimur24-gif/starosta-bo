@@ -34,10 +34,11 @@ import {
   totalStructures,
   type Bone,
 } from "./data/anatomy";
-import { BoneGlyph, SkullMap, type SkullView } from "./components/SkullMap";
+import { SkullMap, type SkullView } from "./components/SkullMap";
 import { AnnotatedFigure } from "./components/AnnotatedFigure";
 import { additionalProjections, plates } from "./data/projections";
 import SkullViewer from "./components/SkullViewer";
+import BodyAtlas from "./components/BodyAtlas";
 import {
   createQuiz,
   makeMistakeQuiz,
@@ -55,10 +56,11 @@ import {
 } from "./lib/storage";
 import { getTelegram, haptic, initializeTelegram } from "./lib/telegram";
 
-type Page = "atlas" | "model" | "practice" | "progress" | "sources";
+type Page = "body" | "atlas" | "model" | "practice" | "progress" | "sources";
 const nav: { id: Page; label: string; icon: typeof BookOpen }[] = [
   { id: "atlas", label: "Атлас", icon: BookOpen },
   { id: "model", label: "3D-череп", icon: Box },
+  { id: "body", label: "Всё тело", icon: Layers3 },
   { id: "practice", label: "Практика", icon: GraduationCap },
   { id: "progress", label: "Мой прогресс", icon: Target },
   { id: "sources", label: "Источники", icon: Layers3 },
@@ -81,6 +83,7 @@ function useRoute() {
   }, []);
   const path = hash.replace(/^#\/?/, "").split("/");
   return {
+    bodyPath: path.slice(1),
     page: (nav.some((n) => n.id === path[0]) ? path[0] : "atlas") as Page,
     bone: path[0] === "bone" ? getBone(path[1]) : undefined,
     invalid: path[0] === "bone" && !getBone(path[1]),
@@ -247,17 +250,27 @@ export default function App() {
                 title="Череп. Со всех сторон."
                 text="Вращайте модель, разбирайте её на отдельные кости и изучайте внутренние поверхности. Выберите кость на модели или в списке."
               />
+              <a className="button secondary" href="#/body">
+                Весь скелет, мышцы и связки
+              </a>
               <SkullViewer
                 onOpen={(id, side) => go(`bone/${id}${side ? `/${side}` : ""}`)}
               />
             </>
+          ) : route.page === "body" ? (
+            <BodyAtlas key={route.bodyPath.join("/")} path={route.bodyPath} />
           ) : route.page === "practice" ? (
-            <Practice
-              key={`${practiceScope}:${reviewMistakes}`}
-              scope={practiceScope}
-              mistakes={reviewMistakes ? progress.mistakes : undefined}
-              onResult={onResult}
-            />
+            <>
+              <a className="button secondary" href="#/body/test">
+                Открыть 3D-тесты, карточки и конспект
+              </a>
+              <Practice
+                key={`${practiceScope}:${reviewMistakes}`}
+                scope={practiceScope}
+                mistakes={reviewMistakes ? progress.mistakes : undefined}
+                onResult={onResult}
+              />
+            </>
           ) : route.page === "progress" ? (
             <ProgressPage
               progress={progress}
@@ -542,7 +555,12 @@ function BoneCard({
       >
         <div className="card-top">
           <span className="card-index">{String(index).padStart(2, "0")}</span>
-          <BoneGlyph id={b.id} color={b.color} />
+          <img
+            className="bone-real-thumbnail"
+            src={`${import.meta.env.BASE_URL}models/thumbnails/${b.id}.png`}
+            alt={`${b.name} — 3D-модель Z-Anatomy`}
+            loading="lazy"
+          />
         </div>
         <div className={`department-label ${b.department}`}>
           <span />
@@ -654,6 +672,12 @@ function BoneDetail({
           </div>
           {viewMode === "3d" ? (
             <>
+              <a
+                className="button secondary"
+                href={`#/body/bone/${b.id}/${side || "left"}`}
+              >
+                Зоны прикреплений и 3D-конспект этой кости
+              </a>
               <SkullViewer
                 boneId={b.id}
                 side={side}
@@ -1435,6 +1459,26 @@ function Sources() {
         ))}
       </div>
       <div className="license-card">
+        <h2>Полное тело: Z-Anatomy</h2>
+        <p>
+          Скелет, мышцы, связки и их учебные 3D-изображения: Z-Anatomy, Gauthier
+          Kervyn и соавторы, CC BY-SA 4.0. Сохранены исходные поверхности и
+          номенклатурные идентификаторы. Отдельные части и стороны считаются
+          объектами модели, а не отдельными анатомическими органами.
+        </p>
+        <p>
+          Суставные зоны взяты из исходного материала Cartilage. Зоны
+          прикреплений — исходные поверхности, пространственно сопоставленные с
+          костью в пределах 6 мм. Покрытие связочных прикреплений ограничено
+          связкой надколенника и длинной подошвенной связкой; отсутствующие зоны
+          недоступны. Пространственное сопоставление не заменяет рецензию
+          анатома.
+        </p>
+        <p>
+          <a href={`${import.meta.env.BASE_URL}models/body/ATTRIBUTION.md`}>
+            Происхождение, изменения и лицензия набора полного тела
+          </a>
+        </p>
         <h2>Иллюстрации и условия использования</h2>
         <p>
           Изображения взяты из официального репозитория OpenStax, Rice

@@ -1,0 +1,92 @@
+{
+  "source": "Z-Anatomy",
+  "license": "CC BY-SA 4.0",
+  "revision": "767f14e0a4dfc55aa7c3455685b62339a4faec99",
+  "renderedBy": "Cranium Three.js BodyViewer",
+  "images": [
+    {
+      "file": "concha.png",
+      "sha256": "4f72c353a196cbcf7600b2031e4a0522d71bcdd26fb34aac3e2237f8a6c404bd",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "ethmoid.png",
+      "sha256": "507472cb96ce51e3573213f272f31f3a6384eecc5055ce256aef83bb24311b9f",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "frontal.png",
+      "sha256": "32acfacc1bbf6810f8f8013d866333657962f049efc7c95e3cbf7a1bc56d50ea",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "lacrimal.png",
+      "sha256": "c8b7ee967e1e16f3fa2a4e649fd4f660687ee0e041a42b31f980f616b2ec655b",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "mandible.png",
+      "sha256": "a48315c1d2deb5cd1154b6da4284f0e04ed4cbfd3d62cb65e9f26057160a7bbe",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "maxilla.png",
+      "sha256": "5aee1354e77e9857727730d6a3929607945f2bab1f8fcf12a3feba8a3123f6cc",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "nasal.png",
+      "sha256": "3eabd65f7089331100b1c74e482248f3ae0959d7e485ff7d42bcdc53c3082316",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "occipital.png",
+      "sha256": "11618d17e65eebf19bbaf208724ee63e780ac87a54ff6e1c97ee13db1b242cd9",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "palatine.png",
+      "sha256": "69a7c798f628e9702051ac851f53c8a8e284ce21557b6dc2013a1a9305909e1c",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "parietal.png",
+      "sha256": "5fec264eabb1194e496b51ea187bc9b9bdebe2bcfff5d0bfa355235b03e8526f",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "sphenoid.png",
+      "sha256": "77a07517ba574aed36a36f81606760b1fee23bb6b65889fb26220a818ad65e69",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "temporal.png",
+      "sha256": "f658918a16b8ef8dde1baa292b6f5e6adf599a96ad983f60f75fbf7369ebb33d",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "vomer.png",
+      "sha256": "af09655cf61a1f365be7b990da2fbe6cf9450eb130d4290fcebde6f888346fb1",
+      "width": 712,
+      "height": 590
+    },
+    {
+      "file": "zygomatic.png",
+      "sha256": "68484b6f526fae3ef85218230f2adc9acaad4a42d1f24b0f27be471cd10de057",
+      "width": 712,
+      "height": 590
+    }
+  ]
+}

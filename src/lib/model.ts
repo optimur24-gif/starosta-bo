@@ -48,6 +48,7 @@ export type ModelOptions = {
   teeth: boolean;
   department: "all" | "cranial" | "facial";
   structureId?: string | null;
+  landmarkGroup?: import("./body-model").LandmarkGroup;
 };
 export type CameraPreset = "front" | "left" | "back" | "base" | "top";
 export const defaultModelOptions: ModelOptions = {

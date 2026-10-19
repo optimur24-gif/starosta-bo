@@ -1,6 +1,9 @@
+import { landmarkGroup } from "./body-model";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { getBone } from "../data/anatomy";
+import { placeLabels, type LabelAnchor } from "./label-layout";
+import { surfacePointVisible } from "./label-visibility";
 import {
   explodeDirection,
   loadSkullModel,
@@ -122,11 +125,17 @@ export async function createSkullScene(
   const labelLayer = document.createElement("div");
   labelLayer.className = "model-label-layer";
   host.appendChild(labelLayer);
+  const leaders = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  leaders.classList.add("model-label-leaders");
+  labelLayer.appendChild(leaders);
   const landmarkLabels: {
     element: HTMLButtonElement;
     mesh: BoneMesh;
     point: THREE.Vector3;
+    normal: THREE.Vector3;
+    leader: SVGLineElement;
     id: string;
+    group: string;
   }[] = [];
 
   for (const part of manifest.parts) {
@@ -198,6 +207,12 @@ export async function createSkullScene(
     element.title = `${structure.name} · ${structure.latin}`;
     element.setAttribute("aria-label", `3D-ориентир: ${structure.name}`);
     element.addEventListener("click", () => callbacks.landmark(structure.id));
+    const leader = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "line",
+    );
+    leader.style.display = "none";
+    leaders.appendChild(leader);
     labelLayer.appendChild(element);
     landmarkLabels.push({
       element,
@@ -205,7 +220,15 @@ export async function createSkullScene(
       point: new THREE.Vector3(...marker.position)
         .sub(center)
         .multiplyScalar(scale),
+      normal: new THREE.Vector3()
+        .fromBufferAttribute(
+          mesh.geometry.getAttribute("normal"),
+          marker.vertexIndex,
+        )
+        .normalize(),
+      leader,
       id: marker.structureId,
+      group: landmarkGroup(structure.name),
     });
   }
 
@@ -403,6 +426,8 @@ export async function createSkullScene(
     needsRender = true;
   });
   const projected = new THREE.Vector3();
+  const worldPoint = new THREE.Vector3();
+  const labelRaycaster = new THREE.Raycaster();
   function animate(time: number) {
     if (disposed) return;
     frame = requestAnimationFrame(animate);
@@ -433,14 +458,15 @@ export async function createSkullScene(
     }
     controls.update(dt);
     if (!needsRender && !moving) return;
+    scene.updateMatrixWorld(true);
+    camera.updateMatrixWorld();
     canvas.dataset.explosion = currentExplosion.toFixed(3);
     for (const { element, mesh } of labels) {
       const enabled =
         options.labels &&
         mesh.visible &&
-        (options.explode > 0.2 ||
-          mesh.name === options.selectedId ||
-          options.isolated);
+        !options.isolated &&
+        (options.explode > 0.2 || mesh.name === options.selectedId);
       element.hidden = !enabled;
       if (enabled) {
         projected.copy(mesh.userData.center).add(mesh.position).project(camera);
@@ -453,24 +479,84 @@ export async function createSkullScene(
         element.style.top = `${(-projected.y * 0.5 + 0.5) * 100}%`;
       }
     }
-    for (const { element, mesh, point, id } of landmarkLabels) {
+    const anchors: LabelAnchor[] = [];
+    const occluders = allMeshes.filter((mesh) => mesh.visible);
+    let occludedCount = 0;
+    for (const {
+      element,
+      mesh,
+      point,
+      normal,
+      leader,
+      id,
+      group,
+    } of landmarkLabels) {
       const enabled =
         mesh.visible &&
         mesh.name === options.selectedId &&
-        (options.labels || id === options.structureId);
+        (options.labels || id === options.structureId) &&
+        (!options.landmarkGroup ||
+          options.landmarkGroup === "all" ||
+          group === options.landmarkGroup ||
+          id === options.structureId);
       element.hidden = !enabled;
+      leader.style.display = "none";
       element.classList.toggle("active", enabled && id === options.structureId);
       if (enabled) {
-        projected.copy(point).add(mesh.position).project(camera);
+        worldPoint.copy(point).add(mesh.position);
+        projected.copy(worldPoint).project(camera);
         element.hidden =
           projected.z > 1 ||
           projected.z < -1 ||
           Math.abs(projected.x) > 0.98 ||
           Math.abs(projected.y) > 0.98;
-        element.style.left = `${(projected.x * 0.5 + 0.5) * 100}%`;
-        element.style.top = `${(-projected.y * 0.5 + 0.5) * 100}%`;
+        if (
+          !element.hidden &&
+          !surfacePointVisible(
+            worldPoint,
+            normal,
+            camera,
+            occluders,
+            labelRaycaster,
+          )
+        ) {
+          element.hidden = true;
+          occludedCount++;
+        }
+        element.dataset.occluded = String(element.hidden);
+        if (!element.hidden)
+          anchors.push({
+            id,
+            x: (projected.x * 0.5 + 0.5) * host.clientWidth,
+            y: (-projected.y * 0.5 + 0.5) * host.clientHeight,
+            active: id === options.structureId,
+            distance: camera.position.distanceTo(worldPoint),
+          });
       }
     }
+    const placements = placeLabels(
+      anchors,
+      host.clientWidth,
+      host.clientHeight,
+    );
+    for (const { element, leader, id } of landmarkLabels) {
+      const placed = placements.find((item) => item.id === id);
+      element.hidden = !placed;
+      if (!placed) continue;
+      element.style.left = `${placed.x}px`;
+      element.style.top = `${placed.y}px`;
+      if (
+        Math.hypot(placed.x - placed.anchorX, placed.y - placed.anchorY) > 2
+      ) {
+        leader.setAttribute("x1", String(placed.anchorX));
+        leader.setAttribute("y1", String(placed.anchorY));
+        leader.setAttribute("x2", String(placed.x));
+        leader.setAttribute("y2", String(placed.y));
+        leader.style.display = "";
+      }
+    }
+    canvas.dataset.visibleLandmarks = String(placements.length);
+    canvas.dataset.occludedLandmarks = String(occludedCount);
     renderer.render(scene, camera);
     needsRender = false;
     canvas.dataset.camera = camera.position

@@ -1,3 +1,4 @@
+import { landmarkGroups } from "../lib/body-model";
 import { useEffect, useRef, useState } from "react";
 import {
   Box,
@@ -426,6 +427,26 @@ export default function SkullViewer({
       )}
       {!compact && bone && state === "ready" && (
         <div className="model-landmark-note">
+          <div
+            className="body-landmark-groups"
+            aria-label="Группы ориентиров кости"
+          >
+            {landmarkGroups.map((group) => (
+              <button
+                key={group.id}
+                aria-pressed={(options.landmarkGroup || "all") === group.id}
+                onClick={() =>
+                  setOptions((current) => ({
+                    ...current,
+                    landmarkGroup: group.id,
+                    structureId: null,
+                  }))
+                }
+              >
+                {group.name}
+              </button>
+            ))}
+          </div>
           <span>
             3D-ориентиры:{" "}
             {bone.structures.filter((s) => coveredIds.includes(s.id)).length} из{" "}

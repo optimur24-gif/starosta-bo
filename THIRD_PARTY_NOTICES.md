@@ -10,3 +10,9 @@
 - **React** and **React DOM**: MIT license, Meta Platforms, Inc. and affiliates. https://github.com/facebook/react . License bundled in `public/licenses/React-LICENSE.txt`.
 
 The Latin anatomical terms are attributed to FIPAT's Terminologia Anatomica 2 as the terminology authority. No FIPAT PDF or full glossary is redistributed. Russian educational explanations and original navigation diagrams in this project are licensed under CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/ .
+
+## Whole-body Z-Anatomy models and study renderings
+
+`public/models/body/`: Z-Anatomy, Gauthier Kervyn and contributors, **CC BY-SA 4.0**, pinned revision `767f14e0a4dfc55aa7c3455685b62339a4faec99`. Original source geometry, attachment patches and cartilage material faces are adapted for browser use. See [asset attribution](public/models/body/ATTRIBUTION.md), the manifest and [license](public/licenses/Z-Anatomy-LICENSE.txt). Generated PNG study views and thumbnails of these meshes retain this attribution and license. Mesh-object counts are not counts of distinct anatomical structures. Source attachment coverage is partial.
+
+`fflate` 0.8.2, Arjun Barrett, MIT, used for gzip decoding on browsers without DecompressionStream. [License](public/licenses/fflate-LICENSE.txt).
